@@ -1,0 +1,1350 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: HCM
+
+
+BO_ 497 BCM_1F1h: 8 Vector__XXX
+ SG_ SysPwrMd : 1|2@0+ (1,0) [0|3] ""  HCM
+ SG_ SysOpnlMd : 6|3@0+ (1,0) [0|7] ""  HCM
+ SG_ SysVolMdV : 7|1@0+ (1,0) [0|1] ""  HCM
+ SG_ SysVolV : 32|1@0+ (1,0) [0|1] ""  HCM
+ SG_ SysVol : 47|8@0+ (0.1,3) [0|28.5] "V"  HCM
+ SG_ SysVolMd : 58|2@0+ (1,0) [0|3] ""  HCM
+
+BO_ 498 GW_IPK_1F2h: 2 Vector__XXX
+ SG_ SysBPM : 5|2@0+ (1,0) [0|3] ""  HCM
+ SG_ SysBPMEnbd : 6|1@0+ (1,0) [0|1] ""  HCM
+
+BO_ 1344 GW_IPK_540h: 8 Vector__XXX
+ SG_ VehOdo : 7|24@0+ (1,0) [0|16777200] ""  HCM
+ SG_ VehOdoV : 31|1@0+ (1,0) [0|1] ""  HCM
+
+BO_ 1345 GW_FICM_541h: 8 Vector__XXX
+ SG_ CalendarYear : 7|8@0+ (1,2000) [2000|2255] "year"  HCM
+ SG_ CalendarMonth : 11|4@0+ (1,0) [0|12] ""  HCM
+ SG_ CalendarDay : 20|5@0+ (1,0) [0|31] "days"  HCM
+ SG_ HourOfDay : 28|5@0+ (1,0) [0|23] ""  HCM
+ SG_ MinuteOfHour : 37|6@0+ (1,0) [0|59] ""  HCM
+ SG_ SecsOfMinute : 45|6@0+ (1,0) [0|59] ""  HCM
+ SG_ TimeDspFmt : 46|1@0+ (1,0) [0|1] ""  HCM
+
+BO_ 2015 GW_Tester_7DFh: 8 Vector__XXX
+ SG_ TesterDiagRequestData_Fun : 7|64@0+ (1,0) [0|255] ""  HCM
+
+BO_ 201 GW_VCU_0C9h: 8 Vector__XXX
+ SG_ PrplsnSysAtv : 51|1@0+ (1,0) [0|1] ""  HCM
+
+BO_ 945 GW_VCU_3B1h: 8 Vector__XXX
+ SG_ FrontCompressorPowerAllowed : 48|1@0+ (1,0) [0|1] ""  HCM
+ SG_ FrontPTCAllowed : 49|1@0+ (1,0) [0|1] ""  HCM
+ SG_ CompressorPowerLimit : 5|6@0+ (0.2,0) [0|12.6] "Kw"  HCM
+ SG_ PTCPowerLimit : 21|6@0+ (0.2,0) [0|12.6] "Kw"  HCM
+ SG_ ChrgPlugStatus : 10|1@0+ (1,0) [0|1] ""  HCM
+
+BO_ 1296 ATC_510h: 8 HCM
+ SG_ HVACAirVolume : 3|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ HVACMode : 7|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ HVACSetTemperature : 15|8@0+ (1,-40) [-40|214] "deg" Vector__XXX
+ SG_ EvaporatorTemperature : 31|8@0+ (1,-40) [-40|214] "deg" Vector__XXX
+ SG_ HVACCycleMode : 33|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ HVACOnRequest : 34|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HVACOnRequestValidity : 35|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HVACFrontDefrostStatus : 36|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HVACFrontDefrostStatusValidity : 37|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HVACRearDefrostStatus : 38|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HVACRearDefrostStatusValidity : 39|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HVACAutoIndicationStatus : 40|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HVACAutoIndicationStatusValidity : 41|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HVACAirClearingIndicationStatus : 42|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HVACAirClearingIndicationStatusV : 43|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HVACEnvirmentTemperatureMask : 44|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HVACPowerStatus : 45|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HVACPressureValidity : 46|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HVACOnRequestIndication : 47|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ RearWindowHeatingIndicator : 16|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HVACAirVolumeValidity : 52|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HVACModeValidity : 53|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HVACSetTemperatureValidity : 54|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HVACCycleModeValidity : 55|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HVACPressure : 51|12@0+ (0.01,0) [0|40.95] "Mpa" Vector__XXX
+
+BO_ 1009 ATC_3F1h: 8 HCM
+ SG_ OtsdAirTemCrValV : 48|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ OtsdAirTemVDA : 49|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HVACEconModeStatus : 50|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ OtsdAirTemCrValMsk : 51|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ OtsdAirTemCrVal : 63|8@0+ (0.5,-40) [-40|87.5] "deg C" Vector__XXX
+
+BO_ 883 BCM_373h: 8 Vector__XXX
+ SG_ RemoteVehicleStartStatus : 48|1@0+ (1,0) [0|1] ""  HCM
+
+BO_ 641 BCM_281h: 8 Vector__XXX
+ SG_ ReverseGear : 5|1@0+ (1,0) [0|1] ""  HCM
+ SG_ DriverDoorLockStatus : 9|2@0+ (1,0) [0|3] ""  HCM
+ SG_ PassengerDoorLockStatus : 11|2@0+ (1,0) [0|3] ""  HCM
+ SG_ BCMMessageCounter : 55|4@0+ (1,0) [0|15] ""  HCM
+ SG_ BCMCheckSum : 63|8@0+ (1,0) [0|255] ""  HCM
+
+BO_ 1953 ATC_7A1h: 8 HCM
+ SG_ ATCDiagResponseData : 7|64@0+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1825 GW_Tester_721h: 8 Vector__XXX
+ SG_ TesterDiagRequestData_ATC : 7|64@0+ (1,0) [0|255] ""  HCM
+
+BO_ 2038 ATC_7F6h: 8 HCM
+ SG_ ATCDTCSeriousLevel : 3|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ ATCDTCHighByte : 15|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ ATCDTCLowByte : 23|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ ATCDTCFailureTypeByte : 31|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ ATCDTCStatus : 39|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ ATCDTCType : 47|8@0+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 885 BCM_375h: 8 Vector__XXX
+ SG_ SunLightIntensity : 23|16@0+ (1,0) [0|60000] "Lux"  HCM
+ SG_ BackLightingLuminance : 39|8@0+ (0.392156862745098,0) [0|100] "%"  HCM
+ SG_ SunLightIntensityValidity : 40|1@0+ (1,0) [0|1] ""  HCM
+ SG_ BackLightingLuminanceValidity : 41|1@0+ (1,0) [0|1] ""  HCM
+ SG_ BackLightingStatus : 42|1@0+ (1,0) [0|1] ""  HCM
+
+BO_ 1784 GW_TBOX_6F8h: 8 Vector__XXX
+ SG_ TBOXRmtACReq : 2|3@0+ (1,0) [0|7] ""  HCM
+ SG_ RmtACTrgtTemReq : 7|4@0+ (1,0) [0|15] ""  HCM
+ SG_ RmtFRSeatHeatReq : 9|2@0+ (1,0) [0|3] ""  HCM
+ SG_ RmtFLSeatHeatReq : 11|2@0+ (1,0) [0|3] ""  HCM
+ SG_ RmtRRSeatHeatReq : 13|2@0+ (1,0) [0|3] ""  HCM
+ SG_ RmtRLSeatHeatReq : 15|2@0+ (1,0) [0|3] ""  HCM
+ SG_ RmtAirClnrReq : 16|1@0+ (1,0) [0|1] ""  HCM
+
+BO_ 1297 ATC_511h: 8 HCM
+ SG_ HVACRearAirVolume : 3|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ HVACRearStatus : 43|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HVACRearStatusValidity : 44|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HVACRearAirVolumeValidity : 47|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HVACMessageCounter : 55|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ HVACChecksum : 63|8@0+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1298 ATC_512h: 8 HCM
+ SG_ RemoteClimateStatus : 2|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ RmtAirClnrAbotRsn : 6|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ HVACEconModeStatus : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ RemoteClimateEndReason : 11|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ RmtSeatHeatFlrRsn : 15|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ RmtFLSeatHeatSts : 16|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ RmtFRSeatHeatSts : 17|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ RmtRLSeatHeatSts : 18|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ RmtRRSeatHeatSts : 19|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ RmtAirClnrActive : 20|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FLSeatHeatLvl : 25|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ FRSeatHeatLvl : 27|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ RLSeatHeatLvl : 29|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ RRSeatHeatLvl : 31|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ FrontLftSeatVentStatus : 33|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ FrontRgtSeatVentStatus : 35|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ RearLftSeatVentStatus : 37|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ RearRgtSeatVentStatus : 39|2@0+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 1300 ATC_514h: 8 HCM
+ SG_ HVACInCarTermperature : 7|8@0+ (0.5,-30) [-30|97] "℃" Vector__XXX
+ SG_ OtsdAirPrtclMtrCDC : 15|8@0+ (2,0) [0|510] "ug/m3" Vector__XXX
+ SG_ HVACDriverTemeratueDisplayComman : 20|5@0+ (0.5,15.5) [0|31] "℃" Vector__XXX
+ SG_ HVACDisplayedInformationMask : 21|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HVACOnOffDspCmd : 29|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HVACAutoDspCmd : 30|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AirClnrBlwrLvlDspCmd : 34|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ AirClnrBlwrSpdSwA : 35|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AirClnrOnOffDspCmd : 36|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AirClnrAutoDspCmd : 37|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AirClnrUserCustAutoWDC : 39|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ AirClnrFltrLife : 47|8@0+ (3,0) [0|765] "h" Vector__XXX
+ SG_ InsdAirPrtclMtrCDC : 55|8@0+ (2,0) [0|510] "ug/m3" Vector__XXX
+ SG_ AirClnrFltrLifeValidity : 56|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AirClnrFltrCsumLvlDspC : 58|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ AirClnrIonizerDspCmd : 59|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1377 GW_FICM_561h: 8 Vector__XXX
+ SG_ FICMACDrvrTemReq : 7|8@0+ (0.5,-40) [-40|87] "deg"  HCM
+ SG_ FICMACPsngTemReq : 15|8@0+ (0.5,-40) [-40|87] "deg"  HCM
+ SG_ FICMACDrvrAirMdReq : 19|4@0+ (1,0) [0|15] ""  HCM
+ SG_ FICMACFrtBlwrLvlReq : 23|4@0+ (1,0) [0|15] ""  HCM
+ SG_ FICMACDrvrTemReqValidity : 24|1@0+ (1,0) [0|1] ""  HCM
+ SG_ FICMACPsngTemReqValidity : 25|1@0+ (1,0) [0|1] ""  HCM
+ SG_ FICMACDrvrAirMdReqValidity : 26|1@0+ (1,0) [0|1] ""  HCM
+ SG_ FICMACFrtBlwrLvlReqValidity : 27|1@0+ (1,0) [0|1] ""  HCM
+ SG_ FICMACOnOffSwReq : 29|2@0+ (1,0) [0|3] ""  HCM
+ SG_ FICMComprOnOffSwReq : 31|2@0+ (1,0) [0|3] ""  HCM
+ SG_ FICMACAutoSwReq : 33|2@0+ (1,0) [0|3] ""  HCM
+ SG_ FICMFLSeatHeatSwReq : 35|2@0+ (1,0) [0|3] ""  HCM
+ SG_ FICMFRSeatHeatSwReq : 37|2@0+ (1,0) [0|3] ""  HCM
+ SG_ FICMACRcctnSwReq : 39|2@0+ (1,0) [0|3] ""  HCM
+ SG_ FICMDfstOnSwReq : 41|2@0+ (1,0) [0|3] ""  HCM
+ SG_ FICMHtdRrWndSwReq : 43|2@0+ (1,0) [0|3] ""  HCM
+ SG_ FICMACSYNCSwReq : 45|2@0+ (1,0) [0|3] ""  HCM
+ SG_ FICMRearAcOffSwReq : 47|2@0+ (1,0) [0|3] ""  HCM
+ SG_ FICMACRearAirMdReq : 51|4@0+ (1,0) [0|15] ""  HCM
+ SG_ FICMACRearBlwrLvlReq : 55|4@0+ (1,0) [0|15] ""  HCM
+ SG_ FICMACRearAirMdReqValidity : 56|1@0+ (1,0) [0|1] ""  HCM
+ SG_ FICMACRearBlwrLvlReqValidity : 57|1@0+ (1,0) [0|1] ""  HCM
+ SG_ FICMRearAutoSwReq : 59|2@0+ (1,0) [0|3] ""  HCM
+ SG_ FICMRearSwReq : 61|2@0+ (1,0) [0|3] ""  HCM
+ SG_ FICMACEconSwReq : 62|1@0+ (1,0) [0|1] ""  HCM
+ SG_ FICMACEconSwReqV : 63|1@0+ (1,0) [0|1] ""  HCM
+
+BO_ 1379 GW_FICM_563h: 8 Vector__XXX
+ SG_ FICMAirClnrBlwrLvlReq : 2|3@0+ (1,0) [0|7] ""  HCM
+ SG_ FICMAirClnrBlwrLvlReqValidity : 4|1@0+ (1,0) [0|1] ""  HCM
+ SG_ FICMAirClnrUserCustAutoWR : 5|1@0+ (1,0) [0|1] ""  HCM
+ SG_ FICMAirClnrUserCustAutoWRValidit : 6|1@0+ (1,0) [0|1] ""  HCM
+ SG_ FICMAirClnrOnOffSwReq : 9|2@0+ (1,0) [0|3] ""  HCM
+ SG_ FICMAirClnrFltrCLRSR : 11|2@0+ (1,0) [0|3] ""  HCM
+ SG_ FICMACFrtBlwrLvlupReq : 19|2@0+ (1,0) [0|3] ""  HCM
+ SG_ FICMACFrtBlwrLvldownReq : 21|2@0+ (1,0) [0|3] ""  HCM
+ SG_ FICMAirClnrBlwrSpdDSR : 13|2@0+ (1,0) [0|3] ""  HCM
+ SG_ FICMAirClnrBlwrSpdISR : 15|2@0+ (1,0) [0|3] ""  HCM
+ SG_ FICMAirClnrAutoSwReq : 17|2@0+ (1,0) [0|3] ""  HCM
+ SG_ FICMRLSeatHeatSwReq : 41|2@0+ (1,0) [0|3] ""  HCM
+ SG_ FICMRRSeatHeatSwReq : 43|2@0+ (1,0) [0|3] ""  HCM
+ SG_ FICMFLSeatVentSwReq : 45|2@0+ (1,0) [0|3] ""  HCM
+ SG_ FICMFRSeatVentSwReq : 47|2@0+ (1,0) [0|3] ""  HCM
+ SG_ FICMRLSeatVentSwReq : 49|2@0+ (1,0) [0|3] ""  HCM
+ SG_ FICMRRSeatVentSwReq : 51|2@0+ (1,0) [0|3] ""  HCM
+
+BO_ 1375 HCM_55Fh: 8 HCM
+ SG_ FrontCompStatFdbck : 6|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ FrontCmpHVInHRsln : 15|8@0+ (2.5,0) [0|637.5] "V" Vector__XXX
+ SG_ FrontCmprElctrCrnt : 39|8@0+ (0.2,0) [0|51] "A" Vector__XXX
+ SG_ FrontACCompModReq : 1|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ FrontPTCStatFdbck : 41|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ FrontPTCHVInHRsln : 23|8@0+ (2.5,0) [0|637.5] "V" Vector__XXX
+ SG_ FrontPTCElctrCrnt : 31|8@0+ (0.2,0) [0|51] "A" Vector__XXX
+ SG_ FrontPTCReq : 43|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ FrontCompSpeed : 55|16@0+ (1,0) [0|65535] "r/min" Vector__XXX
+
+BO_ 501 GW_VCU_1F5h: 8 Vector__XXX
+ SG_ TrShftLvrPos : 27|4@0+ (1,0) [0|15] ""  HCM
+ SG_ TrShftLvrPosV : 28|1@0+ (1,0) [0|1] ""  HCM
+
+BO_ 572 GW_ESC_23Ch: 8 Vector__XXX
+ SG_ VehicleSpeedStatus : 7|1@0+ (1,0) [0|1] ""  HCM
+ SG_ VehicleSpeed : 6|15@0+ (0.015625,0) [0|511.984375] "km / h"  HCM
+ SG_ MessageCounter_23Ch : 55|4@0+ (1,0) [0|15] ""  HCM
+ SG_ CheckSum_23Ch : 63|8@0+ (1,0) [0|255] ""  HCM
+
+BO_ 1430 GW_BMS_596h: 8 Vector__XXX
+ SG_ MaxBatTmp : 7|8@0+ (1,-40) [-40|210] "degC"  HCM
+ SG_ WaterPumpCommandOn : 39|1@0+ (1,0) [0|1] ""  HCM
+ SG_ BatCoolReq : 37|1@0+ (1,0) [0|1] ""  HCM
+ SG_ EXVPosition : 54|7@0+ (1,0) [0|100] ""  HCM
+ SG_ BatComprGearReq : 58|3@0+ (1,0) [0|7] ""  HCM
+
+BO_ 1432 GW_BMS_598h: 8 Vector__XXX
+ SG_ ChrgPlugStatus : 8|1@0+ (1,0) [0|1] ""  HCM
+
+
+
+CM_ SG_ 497 SysPwrMd " System Power Mode ";
+CM_ SG_ 497 SysOpnlMd " System Operational Mode
+先预留，默认发0 ";
+CM_ SG_ 497 SysVolMdV "  ";
+CM_ SG_ 497 SysVolV "  ";
+CM_ SG_ 497 SysVol " Battery Voltage ";
+CM_ SG_ 497 SysVolMd " System Voltage Mode 
+（9-16V） ";
+CM_ SG_ 498 SysBPM "System Backup Power Mode  ";
+CM_ SG_ 498 SysBPMEnbd "System Backup Power Mode Enabled  ";
+CM_ SG_ 1344 VehOdo "Vehicle Odometer  ";
+CM_ SG_ 1344 VehOdoV "Vehicle Odometer Validity  ";
+CM_ SG_ 1345 CalendarYear "current year info 
+仅带FICM时能提供,供诊断snapshot使用 ";
+CM_ SG_ 1345 CalendarMonth "current month info. 
+仅带FICM时能提供,供诊断snapshot使用 ";
+CM_ SG_ 1345 CalendarDay "current day info. 
+仅带FICM时能提供,供诊断snapshot使用 ";
+CM_ SG_ 1345 HourOfDay "Hour Of Day.
+current Hour info. 
+仅带FICM时能提供,供诊断snapshot使用 ";
+CM_ SG_ 1345 MinuteOfHour "Minute Of Hour.
+current Minute info. 
+仅带FICM时能提供,供诊断snapshot使用 ";
+CM_ SG_ 1345 SecsOfMinute "Seconds Of Minute
+current Second info. 
+仅带FICM时能提供,供诊断snapshot使用 ";
+CM_ SG_ 1345 TimeDspFmt " 仅带FICM时能提供 ";
+CM_ SG_ 2015 TesterDiagRequestData_Fun "  ";
+CM_ SG_ 201 PrplsnSysAtv "Power Status: Ready or Not Ready
+法规强制
+（Propulsion System Active） ";
+CM_ SG_ 945 FrontCompressorPowerAllowed "Front Compressor Power Allowed   to HCM ";
+CM_ SG_ 945 FrontPTCAllowed "Front PTC Allowed    to HCM ";
+CM_ SG_ 945 CompressorPowerLimit "Compressor Power Limit
+压缩机限功率信号 ";
+CM_ SG_ 945 PTCPowerLimit "PTC Power Limit
+PTC限制功率信号 ";
+CM_ SG_ 945 ChrgPlugStatus "Charge plug status ";
+CM_ SG_ 1296 HVACAirVolume "  ";
+CM_ SG_ 1296 HVACMode "  ";
+CM_ SG_ 1296 HVACSetTemperature "  ";
+CM_ SG_ 1296 EvaporatorTemperature " ";
+CM_ SG_ 1296 HVACCycleMode "  ";
+CM_ SG_ 1296 HVACOnRequest " ";
+CM_ SG_ 1296 HVACOnRequestValidity " ";
+CM_ SG_ 1296 HVACFrontDefrostStatus " ";
+CM_ SG_ 1296 HVACFrontDefrostStatusValidity " ";
+CM_ SG_ 1296 HVACRearDefrostStatus " ";
+CM_ SG_ 1296 HVACRearDefrostStatusValidity " ";
+CM_ SG_ 1296 HVACAutoIndicationStatus "  ";
+CM_ SG_ 1296 HVACAutoIndicationStatusValidity "  ";
+CM_ SG_ 1296 HVACAirClearingIndicationStatus "  ";
+CM_ SG_ 1296 HVACAirClearingIndicationStatusV "  ";
+CM_ SG_ 1296 HVACEnvirmentTemperatureMask "  ";
+CM_ SG_ 1296 HVACPowerStatus "  ";
+CM_ SG_ 1296 HVACPressureValidity " ";
+CM_ SG_ 1296 HVACOnRequestIndication "  ";
+CM_ SG_ 1296 RearWindowHeatingIndicator "  ";
+CM_ SG_ 1296 HVACAirVolumeValidity " ";
+CM_ SG_ 1296 HVACModeValidity " ";
+CM_ SG_ 1296 HVACSetTemperatureValidity " ";
+CM_ SG_ 1296 HVACCycleModeValidity " ";
+CM_ SG_ 1296 HVACPressure " ";
+CM_ SG_ 1009 OtsdAirTemCrValV "Outside Air Temperature Corrected Value Validity ";
+CM_ SG_ 1009 OtsdAirTemVDA "Outside Air Temperature Virtual Device Availability ";
+CM_ SG_ 1009 HVACEconModeStatus "Outside Air Temperature Virtual Device Availability ";
+CM_ SG_ 1009 OtsdAirTemCrValMsk "Outside Air Temperature Corrected Value Mask
+ ";
+CM_ SG_ 1009 OtsdAirTemCrVal "Outside Air Temperature Corrected Value ";
+CM_ SG_ 883 RemoteVehicleStartStatus " ";
+CM_ SG_ 641 ReverseGear " AT车接收TCU信号转R信号，MT车接收硬线信号发送R ";
+CM_ SG_ 641 DriverDoorLockStatus "  ";
+CM_ SG_ 641 PassengerDoorLockStatus "  ";
+CM_ SG_ 641 BCMMessageCounter "  ";
+CM_ SG_ 641 BCMCheckSum "Checksum=
+byte(0) XOR byte(1) XOR byte(2) XOR byte(3) XOR byte(4) XOR byte(5) XOR byte(6)  ";
+CM_ SG_ 1953 ATCDiagResponseData " ";
+CM_ SG_ 1825 TesterDiagRequestData_ATC " ";
+CM_ SG_ 2038 ATCDTCSeriousLevel "  ";
+CM_ SG_ 2038 ATCDTCHighByte "  ";
+CM_ SG_ 2038 ATCDTCLowByte "  ";
+CM_ SG_ 2038 ATCDTCFailureTypeByte "  ";
+CM_ SG_ 2038 ATCDTCStatus "  ";
+CM_ SG_ 2038 ATCDTCType "  ";
+CM_ SG_ 885 SunLightIntensity "  ";
+CM_ SG_ 885 BackLightingLuminance "默认发50% ";
+CM_ SG_ 885 SunLightIntensityValidity "  ";
+CM_ SG_ 885 BackLightingLuminanceValidity "  ";
+CM_ SG_ 885 BackLightingStatus "  ";
+CM_ SG_ 1784 TBOXRmtACReq "  ";
+CM_ SG_ 1784 RmtACTrgtTemReq "  ";
+CM_ SG_ 1784 RmtFRSeatHeatReq "  ";
+CM_ SG_ 1784 RmtFLSeatHeatReq "  ";
+CM_ SG_ 1784 RmtRRSeatHeatReq "  ";
+CM_ SG_ 1784 RmtRLSeatHeatReq "  ";
+CM_ SG_ 1784 RmtAirClnrReq "TO HVAC  ";
+CM_ SG_ 1297 HVACRearAirVolume "  ";
+CM_ SG_ 1297 HVACRearStatus "  ";
+CM_ SG_ 1297 HVACRearStatusValidity "  ";
+CM_ SG_ 1297 HVACRearAirVolumeValidity " ";
+CM_ SG_ 1297 HVACMessageCounter "  ";
+CM_ SG_ 1297 HVACChecksum "Checksum=byte(0) XOR byte(1) XOR byte(2) XOR byte(3) XOR byte(4) XOR byte(5) XOR byte(6)  ";
+CM_ SG_ 1298 RemoteClimateStatus "  ";
+CM_ SG_ 1298 RmtAirClnrAbotRsn "Remote Air Cleaner Request
+TO TBOX  ";
+CM_ SG_ 1298 HVACEconModeStatus " ";
+CM_ SG_ 1298 RemoteClimateEndReason "  ";
+CM_ SG_ 1298 RmtSeatHeatFlrRsn "  ";
+CM_ SG_ 1298 RmtFLSeatHeatSts "  ";
+CM_ SG_ 1298 RmtFRSeatHeatSts "  ";
+CM_ SG_ 1298 RmtRLSeatHeatSts "  ";
+CM_ SG_ 1298 RmtRRSeatHeatSts "  ";
+CM_ SG_ 1298 RmtAirClnrActive "Remote Air Cleaner Active
+TO TBOX  ";
+CM_ SG_ 1298 FLSeatHeatLvl "  ";
+CM_ SG_ 1298 FRSeatHeatLvl "  ";
+CM_ SG_ 1298 RLSeatHeatLvl "  ";
+CM_ SG_ 1298 RRSeatHeatLvl "  ";
+CM_ SG_ 1298 FrontLftSeatVentStatus "TO FICM ";
+CM_ SG_ 1298 FrontRgtSeatVentStatus "TO FICM ";
+CM_ SG_ 1298 RearLftSeatVentStatus "TO FICM ";
+CM_ SG_ 1298 RearRgtSeatVentStatus "TO FICM ";
+CM_ SG_ 1300 HVACInCarTermperature "  ";
+CM_ SG_ 1300 OtsdAirPrtclMtrCDC "Outside Air Particulate Matter Concentration Display Command(reserved)
+TO TBOX FICM  ";
+CM_ SG_ 1300 HVACDriverTemeratueDisplayComman "  ";
+CM_ SG_ 1300 HVACDisplayedInformationMask " TO FICM ";
+CM_ SG_ 1300 HVACOnOffDspCmd "  ";
+CM_ SG_ 1300 HVACAutoDspCmd "  ";
+CM_ SG_ 1300 AirClnrBlwrLvlDspCmd "Air Cleaner Blower Level Display Command
+TO FICM  ";
+CM_ SG_ 1300 AirClnrBlwrSpdSwA "Air Cleaner Blower Speed Switch Active
+TO FICM  ";
+CM_ SG_ 1300 AirClnrOnOffDspCmd "Air Cleaner On Off Display Command
+TO FICM  ";
+CM_ SG_ 1300 AirClnrAutoDspCmd "Air Cleaner Auto Display Commandctive
+TO FICM  ";
+CM_ SG_ 1300 AirClnrUserCustAutoWDC "Air Cleaner User Customization Auto Work Display Command
+TO FICM  ";
+CM_ SG_ 1300 AirClnrFltrLife "Air Cleaner Filter Life
+TO TBOX FICM  ";
+CM_ SG_ 1300 InsdAirPrtclMtrCDC "Inside Air Particulate Matter Concentration Display Command
+TO TBOX FICM  ";
+CM_ SG_ 1300 AirClnrFltrLifeValidity "Air Cleaner Filter Life Validity
+TO TBOX FICM  ";
+CM_ SG_ 1300 AirClnrFltrCsumLvlDspC "Air Cleaner Filter Consume Level Display Command
+TO FICM  ";
+CM_ SG_ 1300 AirClnrIonizerDspCmd "Air Cleaner Ionizer Display Command
+TO FICM  ";
+CM_ SG_ 1377 FICMACDrvrTemReq "E=N *0.5-40 ";
+CM_ SG_ 1377 FICMACPsngTemReq "E=N *0.5-40 ";
+CM_ SG_ 1377 FICMACDrvrAirMdReq " ";
+CM_ SG_ 1377 FICMACFrtBlwrLvlReq " ";
+CM_ SG_ 1377 FICMACDrvrTemReqValidity " ";
+CM_ SG_ 1377 FICMACPsngTemReqValidity " ";
+CM_ SG_ 1377 FICMACDrvrAirMdReqValidity " ";
+CM_ SG_ 1377 FICMACFrtBlwrLvlReqValidity " ";
+CM_ SG_ 1377 FICMACOnOffSwReq " ";
+CM_ SG_ 1377 FICMComprOnOffSwReq " ";
+CM_ SG_ 1377 FICMACAutoSwReq " ";
+CM_ SG_ 1377 FICMFLSeatHeatSwReq " ";
+CM_ SG_ 1377 FICMFRSeatHeatSwReq " ";
+CM_ SG_ 1377 FICMACRcctnSwReq " ";
+CM_ SG_ 1377 FICMDfstOnSwReq " ";
+CM_ SG_ 1377 FICMHtdRrWndSwReq " ";
+CM_ SG_ 1377 FICMACSYNCSwReq " ";
+CM_ SG_ 1377 FICMRearAcOffSwReq " ";
+CM_ SG_ 1377 FICMACRearAirMdReq " ";
+CM_ SG_ 1377 FICMACRearBlwrLvlReq " ";
+CM_ SG_ 1377 FICMACRearAirMdReqValidity " ";
+CM_ SG_ 1377 FICMACRearBlwrLvlReqValidity " ";
+CM_ SG_ 1377 FICMRearAutoSwReq " ";
+CM_ SG_ 1377 FICMRearSwReq "  ";
+CM_ SG_ 1377 FICMACEconSwReq " ";
+CM_ SG_ 1377 FICMACEconSwReqV " ";
+CM_ SG_ 1379 FICMAirClnrBlwrLvlReq "FICM Air Cleaner Blower Level Request
+TO HVAC(IACU) ";
+CM_ SG_ 1379 FICMAirClnrBlwrLvlReqValidity "FICM Air Cleaner Blower Level Request Validity
+TO HVAC(IACU) ";
+CM_ SG_ 1379 FICMAirClnrUserCustAutoWR "Air Cleaner User Customization Auto Work Request
+TO HVAC(IACU) ";
+CM_ SG_ 1379 FICMAirClnrUserCustAutoWRValidit "Air Cleaner User Customization Auto Work Request Validity
+TO HVAC(IACU) ";
+CM_ SG_ 1379 FICMAirClnrOnOffSwReq "FICM Air Cleaner On Off Switch Request
+TO HVAC(IACU) ";
+CM_ SG_ 1379 FICMAirClnrFltrCLRSR "FICM Air Cleaner Filter Consume Level Reset Switch Request
+TO HVAC(IACU) ";
+CM_ SG_ 1379 FICMACFrtBlwrLvlupReq "FICM AC Front Blower Level up Request ";
+CM_ SG_ 1379 FICMACFrtBlwrLvldownReq "FICM AC Front Blower Level down Request ";
+CM_ SG_ 1379 FICMAirClnrBlwrSpdDSR "FICM Air Cleaner Blower Speed Decrease Switch Request
+TO HVAC(IACU) ";
+CM_ SG_ 1379 FICMAirClnrBlwrSpdISR "FICM Air Cleaner Blower Speed Increase Switch Request
+TO HVAC(IACU) ";
+CM_ SG_ 1379 FICMAirClnrAutoSwReq "FICM Air Cleaner Auto Switch Request
+TO HVAC(IACU) ";
+CM_ SG_ 1379 FICMRLSeatHeatSwReq " ";
+CM_ SG_ 1379 FICMRRSeatHeatSwReq " ";
+CM_ SG_ 1379 FICMFLSeatVentSwReq " ";
+CM_ SG_ 1379 FICMFRSeatVentSwReq " ";
+CM_ SG_ 1379 FICMRLSeatVentSwReq " ";
+CM_ SG_ 1379 FICMRRSeatVentSwReq " ";
+CM_ SG_ 1375 FrontCompStatFdbck "Front Compressor Status Feedback正常工作发0,不工作发2;1和3不触发 ";
+CM_ SG_ 1375 FrontCmpHVInHRsln "Front Compressor High Voltage Input High Resolution ";
+CM_ SG_ 1375 FrontCmprElctrCrnt "Front  Compressor Electrical Current ";
+CM_ SG_ 1375 FrontACCompModReq "Front Air Conditioning Compressor Mode Request工作请求发2,停止请求发0;1和3不触发 ";
+CM_ SG_ 1375 FrontPTCStatFdbck "Front PTC Status Feedback正常工作发0,不工作发2;1和3不触发 ";
+CM_ SG_ 1375 FrontPTCHVInHRsln "Front PTC High Voltage Input High Resolution ";
+CM_ SG_ 1375 FrontPTCElctrCrnt "Front  PTC Electrical Current ";
+CM_ SG_ 1375 FrontPTCReq "Front PTC Request工作请求发2,停止请求发0;1和3不触发 ";
+CM_ SG_ 1375 FrontCompSpeed "FrontCompSpeed压缩机转速信号 ";
+CM_ SG_ 501 TrShftLvrPos "Transmission Shift Lever Position
+（Forward Range A为D档状态）
+tbox法规项 ";
+CM_ SG_ 501 TrShftLvrPosV "Transmission Shift Lever Position Validity ";
+CM_ SG_ 572 VehicleSpeedStatus " ";
+CM_ SG_ 572 VehicleSpeed " ";
+CM_ SG_ 572 MessageCounter_23Ch "  ";
+CM_ SG_ 572 CheckSum_23Ch "Checksum=byte(0) XOR byte(1) XOR byte(2) XOR byte(3) XOR byte(4) XOR byte(5) XOR byte(6)  ";
+CM_ SG_ 1430 MaxBatTmp "Maximum cell temperature  to HCM
+Tbox法规强制 ";
+CM_ SG_ 1430 WaterPumpCommandOn "to HCM ";
+CM_ SG_ 1430 BatCoolReq "电池制冷请求信号。仅51B1。 ";
+CM_ SG_ 1430 EXVPosition "EXV开度百分比信号。仅51B1。 ";
+CM_ SG_ 1430 BatComprGearReq "电池冷却请求压缩机挡位 ";
+CM_ SG_ 1432 ChrgPlugStatus "Charge plug status to HCM ";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_  "DBName" STRING ;
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed";
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 1;
+BA_DEF_ SG_  "GenSigStartValue" FLOAT 0 100000000000;
+BA_DEF_ SG_  "GenSigTimeoutValue" INT 0 65535;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 30000;
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 65535;
+BA_DEF_ BO_  "DiagResponse" ENUM  "no","yes";
+BA_DEF_ BO_  "DiagRequest" ENUM  "no","yes";
+BA_DEF_ BO_  "TpTxIndex" INT 0 255;
+BA_DEF_ BO_  "NmAsrMessage" ENUM  "no","yes";
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 65535;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "no","yes";
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 65535;
+BA_DEF_ BO_  "NmMessage" ENUM  "no","yes";
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Cyclic","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed","IfActive","NoMsgSendType","NotUsed";
+BA_DEF_ BO_  "GenMsgFastOnStart" INT 0 65535;
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 65535;
+BA_DEF_ BO_  "DiagState" ENUM  "no","yes";
+BA_DEF_ BO_  "DiagUudtResponse" ENUM  "false","true";
+BA_DEF_ BU_  "NmNode" ENUM  "no","yes";
+BA_DEF_ BU_  "NmAsrCanMsgCycleOffset" INT 0 65535;
+BA_DEF_ BU_  "NmStationAddress" HEX 0 255;
+BA_DEF_ BU_  "NmAsrNodeIdentifier" HEX 0 255;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "ILUsed" ENUM  "no","yes";
+BA_DEF_ BU_  "NmAsrCanMsgReducedTime" INT 1 65535;
+BA_DEF_ BU_  "NmAsrNode" ENUM  "no","yes";
+BA_DEF_ SG_  "SystemSignalLongSymbol" STRING ;
+BA_DEF_REL_ BU_SG_REL_  "GenSigSuprvRespSubValue" INT 0 65535;
+BA_DEF_REL_ BU_SG_REL_  "GenSigTimeoutTime" INT 0 65535;
+BA_DEF_DEF_  "BusType" "";
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_  "GenSigSendType" "NoSigSendType";
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenSigTimeoutValue" 0;
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_  "DiagResponse" "no";
+BA_DEF_DEF_  "DiagRequest" "no";
+BA_DEF_DEF_  "TpTxIndex" 0;
+BA_DEF_DEF_  "NmAsrMessage" "no";
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "GenMsgILSupport" "no";
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "NmMessage" "no";
+BA_DEF_DEF_  "GenMsgSendType" "NoMsgSendType";
+BA_DEF_DEF_  "GenMsgFastOnStart" 0;
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "DiagState" "no";
+BA_DEF_DEF_  "DiagUudtResponse" "false";
+BA_DEF_DEF_  "NmNode" "no";
+BA_DEF_DEF_  "NmAsrCanMsgCycleOffset" 0;
+BA_DEF_DEF_  "NmStationAddress" 0;
+BA_DEF_DEF_  "NmAsrNodeIdentifier" 50;
+BA_DEF_DEF_  "NodeLayerModules" " ";
+BA_DEF_DEF_  "ILUsed" "no";
+BA_DEF_DEF_  "NmAsrCanMsgReducedTime" 320;
+BA_DEF_DEF_  "NmAsrNode" "no";
+BA_DEF_DEF_REL_ "GenSigSuprvRespSubValue" 0;
+BA_DEF_DEF_REL_ "GenSigTimeoutTime" 0;
+BA_DEF_DEF_  "SystemSignalLongSymbol" "";
+BA_ "BusType" "CAN";
+BA_ "DBName" "HCM";
+BA_ "NmAsrNode" BU_ HCM 0;
+BA_ "NmAsrCanMsgReducedTime" BU_ HCM 320;
+BA_ "ILUsed" BU_ HCM 1;
+BA_ "NodeLayerModules" BU_ HCM "CANoeILNLVector.dll";
+BA_ "NmAsrNodeIdentifier" BU_ HCM 0;
+BA_ "NmStationAddress" BU_ HCM 0;
+BA_ "NmAsrCanMsgCycleOffset" BU_ HCM 0;
+BA_ "NmNode" BU_ HCM 0;
+BA_ "GenMsgNrOfRepetition" BO_ 497 0;
+BA_ "GenMsgSendType" BO_ 497 0;
+BA_ "GenMsgDelayTime" BO_ 497 0;
+BA_ "GenMsgILSupport" BO_ 497 1;
+BA_ "GenMsgCycleTimeFast" BO_ 497 0;
+BA_ "GenMsgCycleTime" BO_ 497 50;
+BA_ "GenMsgNrOfRepetition" BO_ 498 0;
+BA_ "GenMsgSendType" BO_ 498 0;
+BA_ "GenMsgDelayTime" BO_ 498 0;
+BA_ "GenMsgILSupport" BO_ 498 1;
+BA_ "GenMsgCycleTimeFast" BO_ 498 0;
+BA_ "GenMsgCycleTime" BO_ 498 50;
+BA_ "GenMsgNrOfRepetition" BO_ 1344 0;
+BA_ "GenMsgSendType" BO_ 1344 0;
+BA_ "GenMsgDelayTime" BO_ 1344 0;
+BA_ "GenMsgILSupport" BO_ 1344 1;
+BA_ "GenMsgCycleTimeFast" BO_ 1344 0;
+BA_ "GenMsgCycleTime" BO_ 1344 1000;
+BA_ "GenMsgNrOfRepetition" BO_ 1345 0;
+BA_ "GenMsgSendType" BO_ 1345 0;
+BA_ "GenMsgDelayTime" BO_ 1345 0;
+BA_ "GenMsgILSupport" BO_ 1345 1;
+BA_ "GenMsgCycleTimeFast" BO_ 1345 0;
+BA_ "GenMsgCycleTime" BO_ 1345 200;
+BA_ "GenMsgNrOfRepetition" BO_ 2015 0;
+BA_ "GenMsgSendType" BO_ 2015 8;
+BA_ "GenMsgDelayTime" BO_ 2015 0;
+BA_ "DiagRequest" BO_ 2015 1;
+BA_ "GenMsgCycleTimeFast" BO_ 2015 0;
+BA_ "GenMsgNrOfRepetition" BO_ 201 0;
+BA_ "GenMsgSendType" BO_ 201 0;
+BA_ "GenMsgDelayTime" BO_ 201 0;
+BA_ "GenMsgILSupport" BO_ 201 1;
+BA_ "GenMsgCycleTimeFast" BO_ 201 0;
+BA_ "GenMsgCycleTime" BO_ 201 10;
+BA_ "GenMsgNrOfRepetition" BO_ 945 0;
+BA_ "GenMsgSendType" BO_ 945 0;
+BA_ "GenMsgDelayTime" BO_ 945 0;
+BA_ "GenMsgILSupport" BO_ 945 1;
+BA_ "GenMsgCycleTimeFast" BO_ 945 0;
+BA_ "GenMsgCycleTime" BO_ 945 100;
+BA_ "GenMsgNrOfRepetition" BO_ 1296 0;
+BA_ "GenMsgSendType" BO_ 1296 0;
+BA_ "GenMsgDelayTime" BO_ 1296 0;
+BA_ "GenMsgILSupport" BO_ 1296 1;
+BA_ "GenMsgCycleTimeFast" BO_ 1296 0;
+BA_ "GenMsgCycleTime" BO_ 1296 100;
+BA_ "GenMsgNrOfRepetition" BO_ 1009 0;
+BA_ "GenMsgSendType" BO_ 1009 0;
+BA_ "GenMsgDelayTime" BO_ 1009 0;
+BA_ "GenMsgILSupport" BO_ 1009 1;
+BA_ "GenMsgCycleTimeFast" BO_ 1009 0;
+BA_ "GenMsgCycleTime" BO_ 1009 250;
+BA_ "GenMsgNrOfRepetition" BO_ 883 0;
+BA_ "GenMsgSendType" BO_ 883 0;
+BA_ "GenMsgDelayTime" BO_ 883 0;
+BA_ "GenMsgILSupport" BO_ 883 1;
+BA_ "GenMsgStartDelayTime" BO_ 883 15;
+BA_ "GenMsgCycleTimeFast" BO_ 883 0;
+BA_ "GenMsgCycleTime" BO_ 883 200;
+BA_ "GenMsgNrOfRepetition" BO_ 641 0;
+BA_ "GenMsgSendType" BO_ 641 0;
+BA_ "GenMsgDelayTime" BO_ 641 0;
+BA_ "GenMsgILSupport" BO_ 641 1;
+BA_ "GenMsgStartDelayTime" BO_ 641 5;
+BA_ "GenMsgCycleTimeFast" BO_ 641 0;
+BA_ "GenMsgCycleTime" BO_ 641 50;
+BA_ "GenMsgNrOfRepetition" BO_ 1953 0;
+BA_ "GenMsgSendType" BO_ 1953 8;
+BA_ "GenMsgDelayTime" BO_ 1953 0;
+BA_ "DiagResponse" BO_ 1953 1;
+BA_ "GenMsgCycleTimeFast" BO_ 1953 0;
+BA_ "GenMsgNrOfRepetition" BO_ 1825 0;
+BA_ "GenMsgSendType" BO_ 1825 8;
+BA_ "GenMsgDelayTime" BO_ 1825 0;
+BA_ "DiagRequest" BO_ 1825 1;
+BA_ "GenMsgCycleTimeFast" BO_ 1825 0;
+BA_ "GenMsgNrOfRepetition" BO_ 2038 0;
+BA_ "GenMsgSendType" BO_ 2038 8;
+BA_ "GenMsgDelayTime" BO_ 2038 0;
+BA_ "GenMsgCycleTimeFast" BO_ 2038 0;
+BA_ "GenMsgNrOfRepetition" BO_ 885 0;
+BA_ "GenMsgSendType" BO_ 885 0;
+BA_ "GenMsgDelayTime" BO_ 885 0;
+BA_ "GenMsgILSupport" BO_ 885 1;
+BA_ "GenMsgStartDelayTime" BO_ 885 20;
+BA_ "GenMsgCycleTimeFast" BO_ 885 0;
+BA_ "GenMsgCycleTime" BO_ 885 200;
+BA_ "GenMsgNrOfRepetition" BO_ 1784 0;
+BA_ "GenMsgSendType" BO_ 1784 0;
+BA_ "GenMsgDelayTime" BO_ 1784 0;
+BA_ "GenMsgILSupport" BO_ 1784 1;
+BA_ "GenMsgCycleTimeFast" BO_ 1784 0;
+BA_ "GenMsgCycleTime" BO_ 1784 100;
+BA_ "GenMsgNrOfRepetition" BO_ 1297 0;
+BA_ "GenMsgSendType" BO_ 1297 0;
+BA_ "GenMsgDelayTime" BO_ 1297 0;
+BA_ "GenMsgILSupport" BO_ 1297 1;
+BA_ "GenMsgCycleTimeFast" BO_ 1297 0;
+BA_ "GenMsgCycleTime" BO_ 1297 200;
+BA_ "GenMsgNrOfRepetition" BO_ 1298 0;
+BA_ "GenMsgSendType" BO_ 1298 0;
+BA_ "GenMsgDelayTime" BO_ 1298 0;
+BA_ "GenMsgILSupport" BO_ 1298 1;
+BA_ "GenMsgCycleTimeFast" BO_ 1298 0;
+BA_ "GenMsgCycleTime" BO_ 1298 200;
+BA_ "GenMsgNrOfRepetition" BO_ 1300 0;
+BA_ "GenMsgSendType" BO_ 1300 0;
+BA_ "GenMsgDelayTime" BO_ 1300 0;
+BA_ "GenMsgILSupport" BO_ 1300 1;
+BA_ "GenMsgCycleTimeFast" BO_ 1300 0;
+BA_ "GenMsgCycleTime" BO_ 1300 200;
+BA_ "GenMsgNrOfRepetition" BO_ 1377 0;
+BA_ "GenMsgSendType" BO_ 1377 0;
+BA_ "GenMsgDelayTime" BO_ 1377 0;
+BA_ "GenMsgILSupport" BO_ 1377 1;
+BA_ "GenMsgCycleTimeFast" BO_ 1377 0;
+BA_ "GenMsgCycleTime" BO_ 1377 200;
+BA_ "GenMsgNrOfRepetition" BO_ 1379 0;
+BA_ "GenMsgSendType" BO_ 1379 0;
+BA_ "GenMsgDelayTime" BO_ 1379 0;
+BA_ "GenMsgILSupport" BO_ 1379 1;
+BA_ "GenMsgCycleTimeFast" BO_ 1379 0;
+BA_ "GenMsgCycleTime" BO_ 1379 200;
+BA_ "GenMsgNrOfRepetition" BO_ 1375 0;
+BA_ "GenMsgSendType" BO_ 1375 0;
+BA_ "GenMsgDelayTime" BO_ 1375 0;
+BA_ "GenMsgILSupport" BO_ 1375 1;
+BA_ "GenMsgCycleTimeFast" BO_ 1375 0;
+BA_ "GenMsgCycleTime" BO_ 1375 200;
+BA_ "GenMsgNrOfRepetition" BO_ 501 0;
+BA_ "GenMsgSendType" BO_ 501 0;
+BA_ "GenMsgDelayTime" BO_ 501 0;
+BA_ "GenMsgILSupport" BO_ 501 1;
+BA_ "GenMsgCycleTimeFast" BO_ 501 0;
+BA_ "GenMsgCycleTime" BO_ 501 25;
+BA_ "GenMsgNrOfRepetition" BO_ 572 0;
+BA_ "GenMsgSendType" BO_ 572 0;
+BA_ "GenMsgDelayTime" BO_ 572 0;
+BA_ "GenMsgILSupport" BO_ 572 1;
+BA_ "GenMsgCycleTimeFast" BO_ 572 0;
+BA_ "GenMsgCycleTime" BO_ 572 20;
+BA_ "GenMsgNrOfRepetition" BO_ 1430 0;
+BA_ "GenMsgSendType" BO_ 1430 0;
+BA_ "GenMsgDelayTime" BO_ 1430 0;
+BA_ "GenMsgILSupport" BO_ 1430 1;
+BA_ "GenMsgCycleTimeFast" BO_ 1430 0;
+BA_ "GenMsgCycleTime" BO_ 1430 200;
+BA_ "GenMsgNrOfRepetition" BO_ 1432 0;
+BA_ "GenMsgSendType" BO_ 1432 0;
+BA_ "GenMsgDelayTime" BO_ 1432 0;
+BA_ "GenMsgILSupport" BO_ 1432 1;
+BA_ "GenMsgCycleTimeFast" BO_ 1432 0;
+BA_ "GenMsgCycleTime" BO_ 1432 100;
+BA_ "GenSigStartValue" SG_ 497 SysPwrMd 0;
+BA_ "GenSigSendType" SG_ 497 SysPwrMd 0;
+BA_ "GenSigStartValue" SG_ 497 SysOpnlMd 0;
+BA_ "GenSigSendType" SG_ 497 SysOpnlMd 0;
+BA_ "GenSigStartValue" SG_ 497 SysVolMdV 0;
+BA_ "GenSigSendType" SG_ 497 SysVolMdV 0;
+BA_ "GenSigStartValue" SG_ 497 SysVolV 0;
+BA_ "GenSigSendType" SG_ 497 SysVolV 0;
+BA_ "GenSigStartValue" SG_ 497 SysVol 0;
+BA_ "GenSigSendType" SG_ 497 SysVol 0;
+BA_ "GenSigStartValue" SG_ 497 SysVolMd 0;
+BA_ "GenSigSendType" SG_ 497 SysVolMd 0;
+BA_ "GenSigStartValue" SG_ 498 SysBPM 0;
+BA_ "GenSigSendType" SG_ 498 SysBPM 0;
+BA_ "GenSigStartValue" SG_ 498 SysBPMEnbd 0;
+BA_ "GenSigSendType" SG_ 498 SysBPMEnbd 0;
+BA_ "GenSigStartValue" SG_ 1344 VehOdo 0;
+BA_ "GenSigSendType" SG_ 1344 VehOdo 0;
+BA_ "GenSigStartValue" SG_ 1344 VehOdoV 0;
+BA_ "GenSigSendType" SG_ 1344 VehOdoV 0;
+BA_ "GenSigStartValue" SG_ 1345 CalendarYear 0;
+BA_ "GenSigSendType" SG_ 1345 CalendarYear 0;
+BA_ "GenSigStartValue" SG_ 1345 CalendarMonth 0;
+BA_ "GenSigSendType" SG_ 1345 CalendarMonth 0;
+BA_ "GenSigStartValue" SG_ 1345 CalendarDay 0;
+BA_ "GenSigSendType" SG_ 1345 CalendarDay 0;
+BA_ "GenSigStartValue" SG_ 1345 HourOfDay 0;
+BA_ "GenSigSendType" SG_ 1345 HourOfDay 0;
+BA_ "GenSigStartValue" SG_ 1345 MinuteOfHour 0;
+BA_ "GenSigSendType" SG_ 1345 MinuteOfHour 0;
+BA_ "GenSigStartValue" SG_ 1345 SecsOfMinute 0;
+BA_ "GenSigSendType" SG_ 1345 SecsOfMinute 0;
+BA_ "GenSigStartValue" SG_ 1345 TimeDspFmt 0;
+BA_ "GenSigSendType" SG_ 1345 TimeDspFmt 0;
+BA_ "GenSigStartValue" SG_ 2015 TesterDiagRequestData_Fun 0;
+BA_ "GenSigSendType" SG_ 2015 TesterDiagRequestData_Fun 7;
+BA_ "GenSigStartValue" SG_ 201 PrplsnSysAtv 0;
+BA_ "GenSigSendType" SG_ 201 PrplsnSysAtv 0;
+BA_ "GenSigStartValue" SG_ 945 FrontCompressorPowerAllowed 0;
+BA_ "GenSigSendType" SG_ 945 FrontCompressorPowerAllowed 0;
+BA_ "GenSigStartValue" SG_ 945 FrontPTCAllowed 0;
+BA_ "GenSigSendType" SG_ 945 FrontPTCAllowed 0;
+BA_ "GenSigStartValue" SG_ 945 CompressorPowerLimit 0;
+BA_ "GenSigSendType" SG_ 945 CompressorPowerLimit 0;
+BA_ "GenSigStartValue" SG_ 945 PTCPowerLimit 0;
+BA_ "GenSigSendType" SG_ 945 PTCPowerLimit 0;
+BA_ "GenSigStartValue" SG_ 945 ChrgPlugStatus 0;
+BA_ "GenSigSendType" SG_ 945 ChrgPlugStatus 0;
+BA_ "GenSigStartValue" SG_ 1296 HVACAirVolume 0;
+BA_ "GenSigSendType" SG_ 1296 HVACAirVolume 0;
+BA_ "GenSigStartValue" SG_ 1296 HVACMode 0;
+BA_ "GenSigSendType" SG_ 1296 HVACMode 0;
+BA_ "GenSigStartValue" SG_ 1296 HVACSetTemperature 10;
+BA_ "GenSigSendType" SG_ 1296 HVACSetTemperature 0;
+BA_ "GenSigStartValue" SG_ 1296 EvaporatorTemperature 0;
+BA_ "GenSigSendType" SG_ 1296 EvaporatorTemperature 0;
+BA_ "GenSigStartValue" SG_ 1296 HVACCycleMode 0;
+BA_ "GenSigSendType" SG_ 1296 HVACCycleMode 0;
+BA_ "GenSigStartValue" SG_ 1296 HVACOnRequest 0;
+BA_ "GenSigSendType" SG_ 1296 HVACOnRequest 0;
+BA_ "GenSigStartValue" SG_ 1296 HVACOnRequestValidity 0;
+BA_ "GenSigSendType" SG_ 1296 HVACOnRequestValidity 0;
+BA_ "GenSigStartValue" SG_ 1296 HVACFrontDefrostStatus 0;
+BA_ "GenSigSendType" SG_ 1296 HVACFrontDefrostStatus 0;
+BA_ "GenSigStartValue" SG_ 1296 HVACFrontDefrostStatusValidity 0;
+BA_ "GenSigSendType" SG_ 1296 HVACFrontDefrostStatusValidity 0;
+BA_ "GenSigStartValue" SG_ 1296 HVACRearDefrostStatus 0;
+BA_ "GenSigSendType" SG_ 1296 HVACRearDefrostStatus 0;
+BA_ "GenSigStartValue" SG_ 1296 HVACRearDefrostStatusValidity 0;
+BA_ "GenSigSendType" SG_ 1296 HVACRearDefrostStatusValidity 0;
+BA_ "GenSigStartValue" SG_ 1296 HVACAutoIndicationStatus 0;
+BA_ "GenSigSendType" SG_ 1296 HVACAutoIndicationStatus 0;
+BA_ "GenSigStartValue" SG_ 1296 HVACAutoIndicationStatusValidity 0;
+BA_ "GenSigSendType" SG_ 1296 HVACAutoIndicationStatusValidity 0;
+BA_ "GenSigStartValue" SG_ 1296 HVACAirClearingIndicationStatus 0;
+BA_ "GenSigSendType" SG_ 1296 HVACAirClearingIndicationStatus 0;
+BA_ "GenSigStartValue" SG_ 1296 HVACAirClearingIndicationStatusV 0;
+BA_ "GenSigSendType" SG_ 1296 HVACAirClearingIndicationStatusV 0;
+BA_ "SystemSignalLongSymbol" SG_ 1296 HVACAirClearingIndicationStatusV "HVACAirClearingIndicationStatusValidity";
+BA_ "GenSigStartValue" SG_ 1296 HVACEnvirmentTemperatureMask 0;
+BA_ "GenSigSendType" SG_ 1296 HVACEnvirmentTemperatureMask 0;
+BA_ "GenSigStartValue" SG_ 1296 HVACPowerStatus 0;
+BA_ "GenSigSendType" SG_ 1296 HVACPowerStatus 0;
+BA_ "GenSigStartValue" SG_ 1296 HVACPressureValidity 0;
+BA_ "GenSigSendType" SG_ 1296 HVACPressureValidity 0;
+BA_ "GenSigStartValue" SG_ 1296 HVACOnRequestIndication 0;
+BA_ "GenSigSendType" SG_ 1296 HVACOnRequestIndication 0;
+BA_ "GenSigStartValue" SG_ 1296 RearWindowHeatingIndicator 0;
+BA_ "GenSigSendType" SG_ 1296 RearWindowHeatingIndicator 0;
+BA_ "GenSigStartValue" SG_ 1296 HVACAirVolumeValidity 0;
+BA_ "GenSigSendType" SG_ 1296 HVACAirVolumeValidity 0;
+BA_ "GenSigStartValue" SG_ 1296 HVACModeValidity 0;
+BA_ "GenSigSendType" SG_ 1296 HVACModeValidity 0;
+BA_ "GenSigStartValue" SG_ 1296 HVACSetTemperatureValidity 0;
+BA_ "GenSigSendType" SG_ 1296 HVACSetTemperatureValidity 0;
+BA_ "GenSigStartValue" SG_ 1296 HVACCycleModeValidity 0;
+BA_ "GenSigSendType" SG_ 1296 HVACCycleModeValidity 0;
+BA_ "GenSigStartValue" SG_ 1296 HVACPressure 0;
+BA_ "GenSigSendType" SG_ 1296 HVACPressure 0;
+BA_ "GenSigStartValue" SG_ 1009 OtsdAirTemCrValV 0;
+BA_ "GenSigStartValue" SG_ 1009 OtsdAirTemVDA 0;
+BA_ "GenSigStartValue" SG_ 1009 HVACEconModeStatus 0;
+BA_ "GenSigSendType" SG_ 1009 HVACEconModeStatus 0;
+BA_ "GenSigStartValue" SG_ 1009 OtsdAirTemCrValMsk 0;
+BA_ "GenSigStartValue" SG_ 1009 OtsdAirTemCrVal 0;
+BA_ "GenSigStartValue" SG_ 883 RemoteVehicleStartStatus 0;
+BA_ "GenSigSendType" SG_ 883 RemoteVehicleStartStatus 0;
+BA_ "GenSigStartValue" SG_ 641 ReverseGear 0;
+BA_ "GenSigSendType" SG_ 641 ReverseGear 0;
+BA_ "GenSigStartValue" SG_ 641 DriverDoorLockStatus 0;
+BA_ "GenSigSendType" SG_ 641 DriverDoorLockStatus 0;
+BA_ "GenSigStartValue" SG_ 641 PassengerDoorLockStatus 0;
+BA_ "GenSigSendType" SG_ 641 PassengerDoorLockStatus 0;
+BA_ "GenSigStartValue" SG_ 641 BCMMessageCounter 0;
+BA_ "GenSigSendType" SG_ 641 BCMMessageCounter 0;
+BA_ "GenSigStartValue" SG_ 641 BCMCheckSum 0;
+BA_ "GenSigSendType" SG_ 641 BCMCheckSum 0;
+BA_ "GenSigStartValue" SG_ 1953 ATCDiagResponseData 0;
+BA_ "GenSigSendType" SG_ 1953 ATCDiagResponseData 7;
+BA_ "GenSigStartValue" SG_ 1825 TesterDiagRequestData_ATC 0;
+BA_ "GenSigSendType" SG_ 1825 TesterDiagRequestData_ATC 7;
+BA_ "GenSigStartValue" SG_ 2038 ATCDTCSeriousLevel 0;
+BA_ "GenSigSendType" SG_ 2038 ATCDTCSeriousLevel 7;
+BA_ "GenSigStartValue" SG_ 2038 ATCDTCHighByte 0;
+BA_ "GenSigSendType" SG_ 2038 ATCDTCHighByte 7;
+BA_ "GenSigStartValue" SG_ 2038 ATCDTCLowByte 0;
+BA_ "GenSigSendType" SG_ 2038 ATCDTCLowByte 7;
+BA_ "GenSigStartValue" SG_ 2038 ATCDTCFailureTypeByte 0;
+BA_ "GenSigSendType" SG_ 2038 ATCDTCFailureTypeByte 7;
+BA_ "GenSigStartValue" SG_ 2038 ATCDTCStatus 0;
+BA_ "GenSigSendType" SG_ 2038 ATCDTCStatus 7;
+BA_ "GenSigStartValue" SG_ 2038 ATCDTCType 0;
+BA_ "GenSigSendType" SG_ 2038 ATCDTCType 7;
+BA_ "GenSigStartValue" SG_ 885 SunLightIntensity 0;
+BA_ "GenSigSendType" SG_ 885 SunLightIntensity 0;
+BA_ "GenSigStartValue" SG_ 885 BackLightingLuminance 0;
+BA_ "GenSigSendType" SG_ 885 BackLightingLuminance 0;
+BA_ "GenSigStartValue" SG_ 885 SunLightIntensityValidity 0;
+BA_ "GenSigSendType" SG_ 885 SunLightIntensityValidity 0;
+BA_ "GenSigStartValue" SG_ 885 BackLightingLuminanceValidity 0;
+BA_ "GenSigSendType" SG_ 885 BackLightingLuminanceValidity 0;
+BA_ "GenSigStartValue" SG_ 885 BackLightingStatus 0;
+BA_ "GenSigSendType" SG_ 885 BackLightingStatus 0;
+BA_ "GenSigStartValue" SG_ 1784 TBOXRmtACReq 0;
+BA_ "GenSigSendType" SG_ 1784 TBOXRmtACReq 0;
+BA_ "GenSigStartValue" SG_ 1784 RmtACTrgtTemReq 0;
+BA_ "GenSigSendType" SG_ 1784 RmtACTrgtTemReq 0;
+BA_ "GenSigStartValue" SG_ 1784 RmtFRSeatHeatReq 0;
+BA_ "GenSigSendType" SG_ 1784 RmtFRSeatHeatReq 0;
+BA_ "GenSigStartValue" SG_ 1784 RmtFLSeatHeatReq 0;
+BA_ "GenSigSendType" SG_ 1784 RmtFLSeatHeatReq 0;
+BA_ "GenSigStartValue" SG_ 1784 RmtRRSeatHeatReq 0;
+BA_ "GenSigSendType" SG_ 1784 RmtRRSeatHeatReq 0;
+BA_ "GenSigStartValue" SG_ 1784 RmtRLSeatHeatReq 0;
+BA_ "GenSigSendType" SG_ 1784 RmtRLSeatHeatReq 0;
+BA_ "GenSigStartValue" SG_ 1784 RmtAirClnrReq 0;
+BA_ "GenSigSendType" SG_ 1784 RmtAirClnrReq 0;
+BA_ "GenSigStartValue" SG_ 1297 HVACRearAirVolume 0;
+BA_ "GenSigSendType" SG_ 1297 HVACRearAirVolume 0;
+BA_ "GenSigStartValue" SG_ 1297 HVACRearStatus 0;
+BA_ "GenSigSendType" SG_ 1297 HVACRearStatus 0;
+BA_ "GenSigStartValue" SG_ 1297 HVACRearStatusValidity 0;
+BA_ "GenSigSendType" SG_ 1297 HVACRearStatusValidity 0;
+BA_ "GenSigStartValue" SG_ 1297 HVACRearAirVolumeValidity 0;
+BA_ "GenSigSendType" SG_ 1297 HVACRearAirVolumeValidity 0;
+BA_ "GenSigStartValue" SG_ 1297 HVACMessageCounter 0;
+BA_ "GenSigSendType" SG_ 1297 HVACMessageCounter 0;
+BA_ "GenSigStartValue" SG_ 1297 HVACChecksum 0;
+BA_ "GenSigSendType" SG_ 1297 HVACChecksum 0;
+BA_ "GenSigStartValue" SG_ 1298 RemoteClimateStatus 0;
+BA_ "GenSigSendType" SG_ 1298 RemoteClimateStatus 0;
+BA_ "GenSigStartValue" SG_ 1298 RmtAirClnrAbotRsn 0;
+BA_ "GenSigSendType" SG_ 1298 RmtAirClnrAbotRsn 0;
+BA_ "GenSigStartValue" SG_ 1298 HVACEconModeStatus 0;
+BA_ "GenSigSendType" SG_ 1298 HVACEconModeStatus 0;
+BA_ "GenSigStartValue" SG_ 1298 RemoteClimateEndReason 0;
+BA_ "GenSigSendType" SG_ 1298 RemoteClimateEndReason 0;
+BA_ "GenSigStartValue" SG_ 1298 RmtSeatHeatFlrRsn 0;
+BA_ "GenSigSendType" SG_ 1298 RmtSeatHeatFlrRsn 0;
+BA_ "GenSigStartValue" SG_ 1298 RmtFLSeatHeatSts 0;
+BA_ "GenSigSendType" SG_ 1298 RmtFLSeatHeatSts 0;
+BA_ "GenSigStartValue" SG_ 1298 RmtFRSeatHeatSts 0;
+BA_ "GenSigSendType" SG_ 1298 RmtFRSeatHeatSts 0;
+BA_ "GenSigStartValue" SG_ 1298 RmtRLSeatHeatSts 0;
+BA_ "GenSigSendType" SG_ 1298 RmtRLSeatHeatSts 0;
+BA_ "GenSigStartValue" SG_ 1298 RmtRRSeatHeatSts 0;
+BA_ "GenSigSendType" SG_ 1298 RmtRRSeatHeatSts 0;
+BA_ "GenSigStartValue" SG_ 1298 RmtAirClnrActive 0;
+BA_ "GenSigSendType" SG_ 1298 RmtAirClnrActive 0;
+BA_ "GenSigStartValue" SG_ 1298 FLSeatHeatLvl 0;
+BA_ "GenSigSendType" SG_ 1298 FLSeatHeatLvl 0;
+BA_ "GenSigStartValue" SG_ 1298 FRSeatHeatLvl 0;
+BA_ "GenSigSendType" SG_ 1298 FRSeatHeatLvl 0;
+BA_ "GenSigStartValue" SG_ 1298 RLSeatHeatLvl 0;
+BA_ "GenSigSendType" SG_ 1298 RLSeatHeatLvl 0;
+BA_ "GenSigStartValue" SG_ 1298 RRSeatHeatLvl 0;
+BA_ "GenSigSendType" SG_ 1298 RRSeatHeatLvl 0;
+BA_ "GenSigStartValue" SG_ 1298 FrontLftSeatVentStatus 0;
+BA_ "GenSigSendType" SG_ 1298 FrontLftSeatVentStatus 0;
+BA_ "GenSigStartValue" SG_ 1298 FrontRgtSeatVentStatus 0;
+BA_ "GenSigSendType" SG_ 1298 FrontRgtSeatVentStatus 0;
+BA_ "GenSigStartValue" SG_ 1298 RearLftSeatVentStatus 0;
+BA_ "GenSigSendType" SG_ 1298 RearLftSeatVentStatus 0;
+BA_ "GenSigStartValue" SG_ 1298 RearRgtSeatVentStatus 0;
+BA_ "GenSigSendType" SG_ 1298 RearRgtSeatVentStatus 0;
+BA_ "GenSigStartValue" SG_ 1300 HVACInCarTermperature 0;
+BA_ "GenSigSendType" SG_ 1300 HVACInCarTermperature 0;
+BA_ "GenSigStartValue" SG_ 1300 OtsdAirPrtclMtrCDC 0;
+BA_ "GenSigSendType" SG_ 1300 OtsdAirPrtclMtrCDC 0;
+BA_ "GenSigStartValue" SG_ 1300 HVACDriverTemeratueDisplayComman 0;
+BA_ "GenSigSendType" SG_ 1300 HVACDriverTemeratueDisplayComman 0;
+BA_ "SystemSignalLongSymbol" SG_ 1300 HVACDriverTemeratueDisplayComman "HVACDriverTemeratueDisplayCommand";
+BA_ "GenSigStartValue" SG_ 1300 HVACDisplayedInformationMask 0;
+BA_ "GenSigSendType" SG_ 1300 HVACDisplayedInformationMask 0;
+BA_ "GenSigStartValue" SG_ 1300 HVACOnOffDspCmd 0;
+BA_ "GenSigSendType" SG_ 1300 HVACOnOffDspCmd 0;
+BA_ "GenSigStartValue" SG_ 1300 HVACAutoDspCmd 0;
+BA_ "GenSigSendType" SG_ 1300 HVACAutoDspCmd 0;
+BA_ "GenSigStartValue" SG_ 1300 AirClnrBlwrLvlDspCmd 0;
+BA_ "GenSigSendType" SG_ 1300 AirClnrBlwrLvlDspCmd 0;
+BA_ "GenSigStartValue" SG_ 1300 AirClnrBlwrSpdSwA 0;
+BA_ "GenSigSendType" SG_ 1300 AirClnrBlwrSpdSwA 0;
+BA_ "GenSigStartValue" SG_ 1300 AirClnrOnOffDspCmd 0;
+BA_ "GenSigSendType" SG_ 1300 AirClnrOnOffDspCmd 0;
+BA_ "GenSigStartValue" SG_ 1300 AirClnrAutoDspCmd 0;
+BA_ "GenSigSendType" SG_ 1300 AirClnrAutoDspCmd 0;
+BA_ "GenSigStartValue" SG_ 1300 AirClnrUserCustAutoWDC 0;
+BA_ "GenSigSendType" SG_ 1300 AirClnrUserCustAutoWDC 0;
+BA_ "GenSigStartValue" SG_ 1300 AirClnrFltrLife 0;
+BA_ "GenSigSendType" SG_ 1300 AirClnrFltrLife 0;
+BA_ "GenSigStartValue" SG_ 1300 InsdAirPrtclMtrCDC 0;
+BA_ "GenSigSendType" SG_ 1300 InsdAirPrtclMtrCDC 0;
+BA_ "GenSigStartValue" SG_ 1300 AirClnrFltrLifeValidity 0;
+BA_ "GenSigSendType" SG_ 1300 AirClnrFltrLifeValidity 0;
+BA_ "GenSigStartValue" SG_ 1300 AirClnrFltrCsumLvlDspC 0;
+BA_ "GenSigSendType" SG_ 1300 AirClnrFltrCsumLvlDspC 0;
+BA_ "GenSigStartValue" SG_ 1300 AirClnrIonizerDspCmd 0;
+BA_ "GenSigSendType" SG_ 1300 AirClnrIonizerDspCmd 0;
+BA_ "GenSigStartValue" SG_ 1377 FICMACDrvrTemReq 0;
+BA_ "GenSigSendType" SG_ 1377 FICMACDrvrTemReq 0;
+BA_ "GenSigStartValue" SG_ 1377 FICMACPsngTemReq 0;
+BA_ "GenSigSendType" SG_ 1377 FICMACPsngTemReq 0;
+BA_ "GenSigStartValue" SG_ 1377 FICMACDrvrAirMdReq 0;
+BA_ "GenSigSendType" SG_ 1377 FICMACDrvrAirMdReq 0;
+BA_ "GenSigStartValue" SG_ 1377 FICMACFrtBlwrLvlReq 0;
+BA_ "GenSigSendType" SG_ 1377 FICMACFrtBlwrLvlReq 0;
+BA_ "GenSigStartValue" SG_ 1377 FICMACDrvrTemReqValidity 1;
+BA_ "GenSigSendType" SG_ 1377 FICMACDrvrTemReqValidity 0;
+BA_ "GenSigStartValue" SG_ 1377 FICMACPsngTemReqValidity 1;
+BA_ "GenSigSendType" SG_ 1377 FICMACPsngTemReqValidity 0;
+BA_ "GenSigStartValue" SG_ 1377 FICMACDrvrAirMdReqValidity 1;
+BA_ "GenSigSendType" SG_ 1377 FICMACDrvrAirMdReqValidity 0;
+BA_ "GenSigStartValue" SG_ 1377 FICMACFrtBlwrLvlReqValidity 1;
+BA_ "GenSigSendType" SG_ 1377 FICMACFrtBlwrLvlReqValidity 0;
+BA_ "GenSigStartValue" SG_ 1377 FICMACOnOffSwReq 0;
+BA_ "GenSigSendType" SG_ 1377 FICMACOnOffSwReq 0;
+BA_ "GenSigStartValue" SG_ 1377 FICMComprOnOffSwReq 0;
+BA_ "GenSigSendType" SG_ 1377 FICMComprOnOffSwReq 0;
+BA_ "GenSigStartValue" SG_ 1377 FICMACAutoSwReq 0;
+BA_ "GenSigSendType" SG_ 1377 FICMACAutoSwReq 0;
+BA_ "GenSigStartValue" SG_ 1377 FICMFLSeatHeatSwReq 0;
+BA_ "GenSigSendType" SG_ 1377 FICMFLSeatHeatSwReq 0;
+BA_ "GenSigStartValue" SG_ 1377 FICMFRSeatHeatSwReq 0;
+BA_ "GenSigSendType" SG_ 1377 FICMFRSeatHeatSwReq 0;
+BA_ "GenSigStartValue" SG_ 1377 FICMACRcctnSwReq 0;
+BA_ "GenSigSendType" SG_ 1377 FICMACRcctnSwReq 0;
+BA_ "GenSigStartValue" SG_ 1377 FICMDfstOnSwReq 0;
+BA_ "GenSigSendType" SG_ 1377 FICMDfstOnSwReq 0;
+BA_ "GenSigStartValue" SG_ 1377 FICMHtdRrWndSwReq 0;
+BA_ "GenSigSendType" SG_ 1377 FICMHtdRrWndSwReq 0;
+BA_ "GenSigStartValue" SG_ 1377 FICMACSYNCSwReq 0;
+BA_ "GenSigSendType" SG_ 1377 FICMACSYNCSwReq 0;
+BA_ "GenSigStartValue" SG_ 1377 FICMRearAcOffSwReq 0;
+BA_ "GenSigSendType" SG_ 1377 FICMRearAcOffSwReq 0;
+BA_ "GenSigStartValue" SG_ 1377 FICMACRearAirMdReq 0;
+BA_ "GenSigSendType" SG_ 1377 FICMACRearAirMdReq 0;
+BA_ "GenSigStartValue" SG_ 1377 FICMACRearBlwrLvlReq 0;
+BA_ "GenSigSendType" SG_ 1377 FICMACRearBlwrLvlReq 0;
+BA_ "GenSigStartValue" SG_ 1377 FICMACRearAirMdReqValidity 1;
+BA_ "GenSigSendType" SG_ 1377 FICMACRearAirMdReqValidity 0;
+BA_ "GenSigStartValue" SG_ 1377 FICMACRearBlwrLvlReqValidity 1;
+BA_ "GenSigSendType" SG_ 1377 FICMACRearBlwrLvlReqValidity 0;
+BA_ "GenSigStartValue" SG_ 1377 FICMRearAutoSwReq 0;
+BA_ "GenSigSendType" SG_ 1377 FICMRearAutoSwReq 0;
+BA_ "GenSigStartValue" SG_ 1377 FICMRearSwReq 0;
+BA_ "GenSigSendType" SG_ 1377 FICMRearSwReq 0;
+BA_ "GenSigStartValue" SG_ 1377 FICMACEconSwReq 0;
+BA_ "GenSigSendType" SG_ 1377 FICMACEconSwReq 0;
+BA_ "GenSigStartValue" SG_ 1377 FICMACEconSwReqV 0;
+BA_ "GenSigSendType" SG_ 1377 FICMACEconSwReqV 0;
+BA_ "GenSigStartValue" SG_ 1379 FICMAirClnrBlwrLvlReq 0;
+BA_ "GenSigSendType" SG_ 1379 FICMAirClnrBlwrLvlReq 0;
+BA_ "GenSigStartValue" SG_ 1379 FICMAirClnrBlwrLvlReqValidity 1;
+BA_ "GenSigSendType" SG_ 1379 FICMAirClnrBlwrLvlReqValidity 0;
+BA_ "GenSigStartValue" SG_ 1379 FICMAirClnrUserCustAutoWR 0;
+BA_ "GenSigSendType" SG_ 1379 FICMAirClnrUserCustAutoWR 0;
+BA_ "GenSigStartValue" SG_ 1379 FICMAirClnrUserCustAutoWRValidit 1;
+BA_ "GenSigSendType" SG_ 1379 FICMAirClnrUserCustAutoWRValidit 0;
+BA_ "SystemSignalLongSymbol" SG_ 1379 FICMAirClnrUserCustAutoWRValidit "FICMAirClnrUserCustAutoWRValidity";
+BA_ "GenSigStartValue" SG_ 1379 FICMAirClnrOnOffSwReq 0;
+BA_ "GenSigSendType" SG_ 1379 FICMAirClnrOnOffSwReq 0;
+BA_ "GenSigStartValue" SG_ 1379 FICMAirClnrFltrCLRSR 0;
+BA_ "GenSigSendType" SG_ 1379 FICMAirClnrFltrCLRSR 0;
+BA_ "GenSigStartValue" SG_ 1379 FICMACFrtBlwrLvlupReq 0;
+BA_ "GenSigSendType" SG_ 1379 FICMACFrtBlwrLvlupReq 0;
+BA_ "GenSigStartValue" SG_ 1379 FICMACFrtBlwrLvldownReq 0;
+BA_ "GenSigSendType" SG_ 1379 FICMACFrtBlwrLvldownReq 0;
+BA_ "GenSigStartValue" SG_ 1379 FICMAirClnrBlwrSpdDSR 0;
+BA_ "GenSigSendType" SG_ 1379 FICMAirClnrBlwrSpdDSR 0;
+BA_ "GenSigStartValue" SG_ 1379 FICMAirClnrBlwrSpdISR 0;
+BA_ "GenSigSendType" SG_ 1379 FICMAirClnrBlwrSpdISR 0;
+BA_ "GenSigStartValue" SG_ 1379 FICMAirClnrAutoSwReq 0;
+BA_ "GenSigSendType" SG_ 1379 FICMAirClnrAutoSwReq 0;
+BA_ "GenSigStartValue" SG_ 1379 FICMRLSeatHeatSwReq 0;
+BA_ "GenSigSendType" SG_ 1379 FICMRLSeatHeatSwReq 0;
+BA_ "GenSigStartValue" SG_ 1379 FICMRRSeatHeatSwReq 0;
+BA_ "GenSigSendType" SG_ 1379 FICMRRSeatHeatSwReq 0;
+BA_ "GenSigStartValue" SG_ 1379 FICMFLSeatVentSwReq 0;
+BA_ "GenSigSendType" SG_ 1379 FICMFLSeatVentSwReq 0;
+BA_ "GenSigStartValue" SG_ 1379 FICMFRSeatVentSwReq 0;
+BA_ "GenSigSendType" SG_ 1379 FICMFRSeatVentSwReq 0;
+BA_ "GenSigStartValue" SG_ 1379 FICMRLSeatVentSwReq 0;
+BA_ "GenSigSendType" SG_ 1379 FICMRLSeatVentSwReq 0;
+BA_ "GenSigStartValue" SG_ 1379 FICMRRSeatVentSwReq 0;
+BA_ "GenSigSendType" SG_ 1379 FICMRRSeatVentSwReq 0;
+BA_ "GenSigStartValue" SG_ 1375 FrontCompStatFdbck 0;
+BA_ "GenSigSendType" SG_ 1375 FrontCompStatFdbck 0;
+BA_ "GenSigStartValue" SG_ 1375 FrontCmpHVInHRsln 0;
+BA_ "GenSigSendType" SG_ 1375 FrontCmpHVInHRsln 0;
+BA_ "GenSigStartValue" SG_ 1375 FrontCmprElctrCrnt 0;
+BA_ "GenSigSendType" SG_ 1375 FrontCmprElctrCrnt 0;
+BA_ "GenSigStartValue" SG_ 1375 FrontACCompModReq 0;
+BA_ "GenSigSendType" SG_ 1375 FrontACCompModReq 0;
+BA_ "GenSigStartValue" SG_ 1375 FrontPTCStatFdbck 0;
+BA_ "GenSigSendType" SG_ 1375 FrontPTCStatFdbck 0;
+BA_ "GenSigStartValue" SG_ 1375 FrontPTCHVInHRsln 0;
+BA_ "GenSigSendType" SG_ 1375 FrontPTCHVInHRsln 0;
+BA_ "GenSigStartValue" SG_ 1375 FrontPTCElctrCrnt 0;
+BA_ "GenSigSendType" SG_ 1375 FrontPTCElctrCrnt 0;
+BA_ "GenSigStartValue" SG_ 1375 FrontPTCReq 0;
+BA_ "GenSigSendType" SG_ 1375 FrontPTCReq 0;
+BA_ "GenSigStartValue" SG_ 1375 FrontCompSpeed 0;
+BA_ "GenSigSendType" SG_ 1375 FrontCompSpeed 0;
+BA_ "GenSigStartValue" SG_ 501 TrShftLvrPos 0;
+BA_ "GenSigStartValue" SG_ 501 TrShftLvrPosV 0;
+BA_ "GenSigStartValue" SG_ 572 VehicleSpeedStatus 0;
+BA_ "GenSigSendType" SG_ 572 VehicleSpeedStatus 0;
+BA_ "GenSigStartValue" SG_ 572 VehicleSpeed 0;
+BA_ "GenSigSendType" SG_ 572 VehicleSpeed 0;
+BA_ "GenSigStartValue" SG_ 572 MessageCounter_23Ch 0;
+BA_ "GenSigSendType" SG_ 572 MessageCounter_23Ch 0;
+BA_ "GenSigStartValue" SG_ 572 CheckSum_23Ch 0;
+BA_ "GenSigSendType" SG_ 572 CheckSum_23Ch 0;
+BA_ "GenSigStartValue" SG_ 1430 MaxBatTmp 0;
+BA_ "GenSigSendType" SG_ 1430 MaxBatTmp 0;
+BA_ "GenSigStartValue" SG_ 1430 WaterPumpCommandOn 0;
+BA_ "GenSigSendType" SG_ 1430 WaterPumpCommandOn 0;
+BA_ "GenSigStartValue" SG_ 1430 BatCoolReq 0;
+BA_ "GenSigSendType" SG_ 1430 BatCoolReq 0;
+BA_ "GenSigStartValue" SG_ 1430 EXVPosition 0;
+BA_ "GenSigSendType" SG_ 1430 EXVPosition 0;
+BA_ "GenSigStartValue" SG_ 1430 BatComprGearReq 0;
+BA_ "GenSigSendType" SG_ 1430 BatComprGearReq 0;
+BA_ "GenSigStartValue" SG_ 1432 ChrgPlugStatus 0;
+BA_ "GenSigSendType" SG_ 1432 ChrgPlugStatus 0;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 497 SysPwrMd 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 497 SysOpnlMd 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 497 SysVolMdV 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 497 SysVolV 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 497 SysVol 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 497 SysVolMd 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 498 SysBPM 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 498 SysBPMEnbd 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1344 VehOdo 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1344 VehOdoV 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1345 CalendarYear 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1345 CalendarMonth 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1345 CalendarDay 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1345 HourOfDay 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1345 MinuteOfHour 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1345 SecsOfMinute 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1345 TimeDspFmt 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 201 PrplsnSysAtv 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 945 FrontCompressorPowerAllowed 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 945 FrontPTCAllowed 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 945 CompressorPowerLimit 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 945 PTCPowerLimit 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 945 ChrgPlugStatus 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 883 RemoteVehicleStartStatus 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 641 ReverseGear 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 641 DriverDoorLockStatus 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 641 PassengerDoorLockStatus 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 641 BCMMessageCounter 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 641 BCMCheckSum 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 885 SunLightIntensity 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 885 BackLightingLuminance 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 885 SunLightIntensityValidity 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 885 BackLightingLuminanceValidity 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 885 BackLightingStatus 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1784 TBOXRmtACReq 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1784 RmtACTrgtTemReq 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1784 RmtFRSeatHeatReq 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1784 RmtFLSeatHeatReq 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1784 RmtRRSeatHeatReq 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1784 RmtRLSeatHeatReq 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1784 RmtAirClnrReq 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1377 FICMACDrvrTemReq 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1377 FICMACPsngTemReq 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1377 FICMACDrvrAirMdReq 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1377 FICMACFrtBlwrLvlReq 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1377 FICMACDrvrTemReqValidity 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1377 FICMACPsngTemReqValidity 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1377 FICMACDrvrAirMdReqValidity 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1377 FICMACFrtBlwrLvlReqValidity 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1377 FICMACOnOffSwReq 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1377 FICMComprOnOffSwReq 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1377 FICMACAutoSwReq 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1377 FICMFLSeatHeatSwReq 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1377 FICMFRSeatHeatSwReq 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1377 FICMACRcctnSwReq 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1377 FICMDfstOnSwReq 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1377 FICMHtdRrWndSwReq 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1377 FICMACSYNCSwReq 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1377 FICMRearAcOffSwReq 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1377 FICMACRearAirMdReq 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1377 FICMACRearBlwrLvlReq 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1377 FICMACRearAirMdReqValidity 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1377 FICMACRearBlwrLvlReqValidity 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1377 FICMRearAutoSwReq 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1377 FICMRearSwReq 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1377 FICMACEconSwReq 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1377 FICMACEconSwReqV 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1379 FICMAirClnrBlwrLvlReq 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1379 FICMAirClnrBlwrLvlReqValidity 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1379 FICMAirClnrUserCustAutoWR 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1379 FICMAirClnrUserCustAutoWRValidit 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1379 FICMAirClnrOnOffSwReq 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1379 FICMAirClnrFltrCLRSR 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1379 FICMACFrtBlwrLvlupReq 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1379 FICMACFrtBlwrLvldownReq 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1379 FICMAirClnrBlwrSpdDSR 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1379 FICMAirClnrBlwrSpdISR 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1379 FICMAirClnrAutoSwReq 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1379 FICMRLSeatHeatSwReq 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1379 FICMRRSeatHeatSwReq 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1379 FICMFLSeatVentSwReq 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1379 FICMFRSeatVentSwReq 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1379 FICMRLSeatVentSwReq 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1379 FICMRRSeatVentSwReq 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 501 TrShftLvrPos 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 501 TrShftLvrPosV 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 572 VehicleSpeedStatus 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 572 VehicleSpeed 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 572 MessageCounter_23Ch 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 572 CheckSum_23Ch 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1430 MaxBatTmp 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1430 WaterPumpCommandOn 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1430 BatCoolReq 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1430 EXVPosition 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1430 BatComprGearReq 150;
+BA_REL_ "GenSigTimeoutTime" BU_SG_REL_ HCM SG_ 1432 ChrgPlugStatus 150;
+VAL_ 497 SysPwrMd 3 "Crank" 2 "Run" 1 "ACC" 0 "Off" ;
+VAL_ 497 SysOpnlMd 5 "Diagnosic or Reprogramming(Reserve)" 4 "Storage" 3 "Show Room(Reserve)" 2 "End of Line(Reserve)" 1 "Assembly" 0 "Normal Mode" ;
+VAL_ 497 SysVolMdV 1 "Invalid" 0 "Valid" ;
+VAL_ 497 SysVolV 1 "Invalid" 0 "Valid" ;
+VAL_ 497 SysVol 0 "V (0x0 - 0xFF)" ;
+VAL_ 497 SysVolMd 3 "Illegal System  Voltage" 2 "High System Voltage" 1 "Low System Voltage" 0 "Normal" ;
+VAL_ 498 SysBPM 3 "Crank Request" 2 "Run" 1 "ACC" 0 "Off" ;
+VAL_ 498 SysBPMEnbd 1 "True" 0 "False" ;
+VAL_ 1344 VehOdo 0 "(0x0 - 0xFFFFFF)" ;
+VAL_ 1344 VehOdoV 1 "Invalid" 0 "Valid" ;
+VAL_ 1345 CalendarYear 0 "year (0x0 - 0xFF)" ;
+VAL_ 1345 CalendarMonth 12 "December" 11 "November" 10 "October" 9 "September" 8 "August" 7 "July" 6 "June" 5 "May" 4 "April" 3 "March" 2 "February" 1 "January" 0 "Unknown" ;
+VAL_ 1345 CalendarDay 0 "days (0x0 - 0x1F)" ;
+VAL_ 1345 HourOfDay 0 "(0x0 - 0x17)" ;
+VAL_ 1345 MinuteOfHour 0 "(0x0 - 0x3B)" ;
+VAL_ 1345 SecsOfMinute 0 "(0x0 - 0x3B)" ;
+VAL_ 1345 TimeDspFmt 1 "24 hour mode" 0 "12 hour mode" ;
+VAL_ 201 PrplsnSysAtv 0 "Power Not Ready" 1 "Power Ready" ;
+VAL_ 945 FrontCompressorPowerAllowed 0 "Not Allowed" 1 "Allowed" ;
+VAL_ 945 FrontPTCAllowed 0 "Not Allowed" 1 "Allowed" ;
+VAL_ 945 ChrgPlugStatus 0 "Charge plug don't connect                                                                                       1:Charge plug connect" ;
+VAL_ 1296 HVACAirVolume 15 "Invalid" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "auto blower level" 8 "8" 7 "7" 6 "6" 5 "5" 4 "4" 3 "3" 2 "2" 1 "1" 0 "0" ;
+VAL_ 1296 HVACMode 15 "Invalid" 14 "0x6-0xE:Reserved" 13 "0x6-0xE:Reserved" 12 "0x6-0xE:Reserved" 11 "0x6-0xE:Reserved" 10 "0x6-0xE:Reserved" 9 "0x6-0xE:Reserved" 8 "0x6-0xE:Reserved" 7 "0x6-0xE:Reserved" 6 "auto air distribute mode" 5 "0x5:Defrost" 4 "0x4:Foot&Defrost" 3 "0x3:Foot" 2 "0x2:Face&Foot" 1 "0x1:Face" 0 "0x0:Default" ;
+VAL_ 1296 HVACSetTemperature 255 "Invalid" ;
+VAL_ 1296 EvaporatorTemperature 255 "Invalid" ;
+VAL_ 1296 HVACCycleMode 3 "3:Invalid" 2 "Auto Recirculation" 1 "ExteriorCirculation" 0 "InteriorCirculation" ;
+VAL_ 1296 HVACOnRequest 1 "HVAC On" 0 "HVAC Off" ;
+VAL_ 1296 HVACOnRequestValidity 0 "Valid" 1 "Invalid" ;
+VAL_ 1296 HVACFrontDefrostStatus 0 "Off" 1 "On" ;
+VAL_ 1296 HVACFrontDefrostStatusValidity 0 "Valid" 1 "Invalid" ;
+VAL_ 1296 HVACRearDefrostStatus 0 "Off" 1 "On" ;
+VAL_ 1296 HVACRearDefrostStatusValidity 0 "Valid" 1 "Invalid" ;
+VAL_ 1296 HVACAutoIndicationStatus 1 "On" 0 "Off" ;
+VAL_ 1296 HVACAutoIndicationStatusValidity 1 "Invalid" 0 "Valid" ;
+VAL_ 1296 HVACAirClearingIndicationStatus 1 "On" 0 "Off" ;
+VAL_ 1296 HVACAirClearingIndicationStatusV 1 "Invalid" 0 "Valid" ;
+VAL_ 1296 HVACEnvirmentTemperatureMask 1 "Use Data" 0 "Don't USE data" ;
+VAL_ 1296 HVACPowerStatus 1 "ON" 0 "OFF" ;
+VAL_ 1296 HVACPressureValidity 0 "Valid" 1 "Invalid" ;
+VAL_ 1296 HVACOnRequestIndication 1 "Indicator On" 0 "Indicator Off" ;
+VAL_ 1296 RearWindowHeatingIndicator 1 "On" 0 "Off" ;
+VAL_ 1296 HVACAirVolumeValidity 0 "Valid" 1 "Invalid" ;
+VAL_ 1296 HVACModeValidity 0 "Valid" 1 "Invalid" ;
+VAL_ 1296 HVACSetTemperatureValidity 0 "Valid" 1 "Invalid" ;
+VAL_ 1296 HVACCycleModeValidity 0 "Valid" 1 "Invalid" ;
+VAL_ 1009 OtsdAirTemCrValV 1 "Invalid" 0 "Valid" ;
+VAL_ 1009 OtsdAirTemVDA 1 "Virtual Device Available" 0 "Virtual Device Unavailable" ;
+VAL_ 1009 HVACEconModeStatus 0 "Econ Off" 1 "Econ On" ;
+VAL_ 1009 OtsdAirTemCrValMsk 1 "Use Data" 0 "Don't Use Data" ;
+VAL_ 1009 OtsdAirTemCrVal 0 "deg C (0x0 - 0xFF)" ;
+VAL_ 883 RemoteVehicleStartStatus 0 "Inactive" 1 "Active" ;
+VAL_ 641 ReverseGear 1 "Reverse Gear" 0 "Not Reverse Gear" ;
+VAL_ 641 DriverDoorLockStatus 3 "Invalid" 2 "Reserved" 1 "Lock" 0 "Unlock" ;
+VAL_ 641 PassengerDoorLockStatus 3 "Invalid" 2 "Reserved" 1 "Lock" 0 "Unlock" ;
+VAL_ 2038 ATCDTCSeriousLevel 15 "Reserved" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "Reserved" 8 "Reserved" 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Level Ⅳ" 3 "Level Ⅲ" 2 "Level Ⅱ" 1 "Level Ⅰ" 0 "Not Used" ;
+VAL_ 2038 ATCDTCType 7 "Reserved" 6 "Type F" 5 "Type E" 4 "Type D" 3 "Type C" 2 "Type B" 1 "Type A" 0 "Not Used" ;
+VAL_ 885 SunLightIntensityValidity 1 "Invalid" 0 "Valid" ;
+VAL_ 885 BackLightingLuminanceValidity 1 "Invalid" 0 "Valid" ;
+VAL_ 885 BackLightingStatus 1 "ON" 0 "OFF" ;
+VAL_ 1784 TBOXRmtACReq 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Full Hot" 3 "Full Cold" 2 "AUTO" 1 "Blower Only" 0 "Off/Stop" ;
+VAL_ 1784 RmtACTrgtTemReq 15 "High" 14 "30 Deg C" 13 "29 Deg C" 12 "28 Deg C" 11 "27 Deg C" 10 "26 Deg C" 9 "25 Deg C" 8 "24 Deg C" 7 "23 Deg C" 6 "22 Deg C" 5 "21 Deg C" 4 "20 Deg C" 3 "19 Deg C" 2 "18 Deg C" 1 "Low" 0 "None" ;
+VAL_ 1784 RmtFRSeatHeatReq 3 "High" 2 "Mid" 1 "Low" 0 "Off" ;
+VAL_ 1784 RmtFLSeatHeatReq 3 "High" 2 "Mid" 1 "Low" 0 "Off" ;
+VAL_ 1784 RmtRRSeatHeatReq 3 "High" 2 "Mid" 1 "Low" 0 "Off" ;
+VAL_ 1784 RmtRLSeatHeatReq 3 "High" 2 "Mid" 1 "Low" 0 "Off" ;
+VAL_ 1784 RmtAirClnrReq 1 "True" 0 "False" ;
+VAL_ 1297 HVACRearAirVolume 15 "Invalid" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "auto blower level" 8 "8" 7 "7" 6 "6" 5 "5" 4 "4" 3 "3" 2 "2" 1 "1" 0 "0" ;
+VAL_ 1297 HVACRearStatus 1 "On" 0 "Off" ;
+VAL_ 1297 HVACRearStatusValidity 1 "Invalid" 0 "Valid" ;
+VAL_ 1297 HVACRearAirVolumeValidity 1 "Invalid" 0 "Valid" ;
+VAL_ 1298 RemoteClimateStatus 7 "Reserved" 6 "Reserved" 5 "Reserved" 4 "Full Hot" 3 "Full Cold" 2 "Auto" 1 "blower only" 0 "Off/Stop" ;
+VAL_ 1298 RmtAirClnrAbotRsn 15 "Reserved" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "Reserved" 8 "IAQI Reach Goal" 7 "System Power Mode is abnormal" 6 "Vehicle load shed level Risk" 5 "FICM signal input" 4 "IACU signal input" 3 "IACU System Failure" 2 "Work time out" 1 "Tbox Ended Request" 0 "normal work" ;
+VAL_ 1298 HVACEconModeStatus 0 "Econ Off" 1 "Econ On" ;
+VAL_ 1298 RemoteClimateEndReason 15 "Reserved" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "High Voltage Not Ready" 9 "Power mode!=OFF" 8 "Vehicle load shed level Risk" 7 "vehicle unlocked" 6 "FICM signal input" 5 "HVACFP signal Input" 4 "Climate System Failure" 3 "Work time out" 2 "Engine Not Running" 1 "Tbox Ended Request" 0 "normal work" ;
+VAL_ 1298 RmtSeatHeatFlrRsn 15 "Reserved" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "High Voltage Not Ready" 9 "Reserved" 8 "Reserved" 7 "HVACFP signal Input" 6 "Power mode!=OFF" 5 "vehicle unlocked" 4 "Heated Seat System Failure" 3 "Engine Not Running" 2 "Heated Seat Timeout" 1 "TBOX Ended Request" 0 "No Reason" ;
+VAL_ 1298 RmtFLSeatHeatSts 1 "On" 0 "Off" ;
+VAL_ 1298 RmtFRSeatHeatSts 1 "On" 0 "Off" ;
+VAL_ 1298 RmtRLSeatHeatSts 1 "On" 0 "Off" ;
+VAL_ 1298 RmtRRSeatHeatSts 1 "On" 0 "Off" ;
+VAL_ 1298 RmtAirClnrActive 1 "Ture" 0 "False" ;
+VAL_ 1298 FLSeatHeatLvl 3 "High" 2 "Mid" 1 "Low" 0 "Off" ;
+VAL_ 1298 FRSeatHeatLvl 3 "High" 2 "Mid" 1 "Low" 0 "Off" ;
+VAL_ 1298 RLSeatHeatLvl 3 "High" 2 "Mid" 1 "Low" 0 "Off" ;
+VAL_ 1298 RRSeatHeatLvl 3 "High" 2 "Mid" 1 "Low" 0 "Off" ;
+VAL_ 1298 FrontLftSeatVentStatus 3 "High" 2 "Mid" 1 "Low" 0 "Off" ;
+VAL_ 1298 FrontRgtSeatVentStatus 3 "High" 2 "Mid" 1 "Low" 0 "Off" ;
+VAL_ 1298 RearLftSeatVentStatus 3 "High" 2 "Mid" 1 "Low" 0 "Off" ;
+VAL_ 1298 RearRgtSeatVentStatus 3 "High" 2 "Mid" 1 "Low" 0 "Off" ;
+VAL_ 1300 HVACInCarTermperature 255 "Invalid" ;
+VAL_ 1300 OtsdAirPrtclMtrCDC 255 "error" 254 "reserved" 253 "Invalid" 252 "reminder on" 251 "reminder off" ;
+VAL_ 1300 HVACDriverTemeratueDisplayComman 31 "Invalid" ;
+VAL_ 1300 HVACDisplayedInformationMask 1 "True" 0 "False" ;
+VAL_ 1300 HVACOnOffDspCmd 1 "On" 0 "Off" ;
+VAL_ 1300 HVACAutoDspCmd 1 "True" 0 "False" ;
+VAL_ 1300 AirClnrBlwrLvlDspCmd 7 "Auto blower level" 6 "6 level" 5 "5 level" 4 "4 level" 3 "3 level" 2 "2 level" 1 "1 level" 0 "Blower off" ;
+VAL_ 1300 AirClnrBlwrSpdSwA 1 "True" 0 "False" ;
+VAL_ 1300 AirClnrOnOffDspCmd 1 "On" 0 "Off" ;
+VAL_ 1300 AirClnrAutoDspCmd 1 "True" 0 "False" ;
+VAL_ 1300 AirClnrUserCustAutoWDC 3 "Function disable" 2 "Reserved" 1 "on" 0 "off" ;
+VAL_ 1300 InsdAirPrtclMtrCDC 255 "error" 254 "reserved" 253 "Invalid" 252 "reminder on" 251 "reminder off" ;
+VAL_ 1300 AirClnrFltrLifeValidity 1 "Invalid" 0 "Valid" ;
+VAL_ 1300 AirClnrFltrCsumLvlDspC 3 "Consume Use up" 2 "Consume 2/3" 1 "Consume 1/3" 0 "Consume 0" ;
+VAL_ 1300 AirClnrIonizerDspCmd 1 "True" 0 "False" ;
+VAL_ 1377 FICMACDrvrTemReq 255 "Invalid" ;
+VAL_ 1377 FICMACPsngTemReq 255 "Invalid" ;
+VAL_ 1377 FICMACDrvrAirMdReq 0 "Default" 1 "Face" 2 "Face&Foot" 3 "Foot" 4 "Foot&Defrost" 5 "Defrost" 6 "auto air distribute mode" 7 "Reserved" 8 "Reserved" 9 "Reserved" 10 "Reserved" 11 "Reserved" 12 "Reserved" 13 "Reserved" 14 "Reserved" 15 "Invalid" ;
+VAL_ 1377 FICMACFrtBlwrLvlReq 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "auto blower level" 10 "Reserved" 11 "Reserved" 12 "Reserved" 13 "Reserved" 14 "Reserved" 15 "Invalid" ;
+VAL_ 1377 FICMACDrvrTemReqValidity 0 "Valid" 1 "Invalid" ;
+VAL_ 1377 FICMACPsngTemReqValidity 0 "Valid" 1 "Invalid" ;
+VAL_ 1377 FICMACDrvrAirMdReqValidity 0 "Valid" 1 "Invalid" ;
+VAL_ 1377 FICMACFrtBlwrLvlReqValidity 0 "Valid" 1 "Invalid" ;
+VAL_ 1377 FICMACOnOffSwReq 0 "No request" 1 "short press" 2 "long press" 3 "reserved" ;
+VAL_ 1377 FICMComprOnOffSwReq 0 "No request" 1 "short press" 2 "long press" 3 "reserved" ;
+VAL_ 1377 FICMACAutoSwReq 0 "No request" 1 "short press" 2 "long press" 3 "reserved" ;
+VAL_ 1377 FICMFLSeatHeatSwReq 0 "No request" 1 "short press" 2 "long Press" 3 "reserved" ;
+VAL_ 1377 FICMFRSeatHeatSwReq 0 "No request" 1 "short press" 2 "long Press" 3 "reserved" ;
+VAL_ 1377 FICMACRcctnSwReq 0 "No request" 1 "short press" 2 "long press" 3 "reserved" ;
+VAL_ 1377 FICMDfstOnSwReq 0 "No request" 1 "short press" 2 "long press" 3 "reserved" ;
+VAL_ 1377 FICMHtdRrWndSwReq 0 "No request" 1 "short press" 2 "long press" 3 "reserved" ;
+VAL_ 1377 FICMACSYNCSwReq 0 "No request" 1 "short press" 2 "long press" 3 "reserved" ;
+VAL_ 1377 FICMRearAcOffSwReq 0 "No request" 1 "short press" 2 "long press" 3 "reserved" ;
+VAL_ 1377 FICMACRearAirMdReq 0 "Default" 1 "Face" 2 "Face&Foot" 3 "Foot" 4 "Foot&Defrost" 5 "Defrost" 6 "auto air distribute mode" 7 "Reserved" 8 "Reserved" 9 "Reserved" 10 "Reserved" 11 "Reserved" 12 "Reserved" 13 "Reserved" 14 "Reserved" 15 "Invalid" ;
+VAL_ 1377 FICMACRearBlwrLvlReq 0 "0" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" 8 "8" 9 "auto blower level" 10 "Reserved" 11 "Reserved" 12 "Reserved" 13 "Reserved" 14 "Reserved" 15 "Invalid" ;
+VAL_ 1377 FICMACRearAirMdReqValidity 0 "Valid" 1 "Invalid" ;
+VAL_ 1377 FICMACRearBlwrLvlReqValidity 0 "Valid" 1 "Invalid" ;
+VAL_ 1377 FICMRearAutoSwReq 0 "No request" 1 "short press" 2 "long press" 3 "reserved" ;
+VAL_ 1377 FICMRearSwReq 3 "reserved" 2 "long press" 1 "short press" 0 "No request" ;
+VAL_ 1377 FICMACEconSwReq 0 "Not Press" 1 "Press" ;
+VAL_ 1377 FICMACEconSwReqV 0 "Invalid" 1 "Valid" ;
+VAL_ 1379 FICMAirClnrBlwrLvlReq 0 "Blower off" 1 "1 level" 2 "2 level" 3 "3 level" 4 "4 level" 5 "5 level" 6 "6 level" 7 "7 level" ;
+VAL_ 1379 FICMAirClnrBlwrLvlReqValidity 0 "Valid" 1 "Invalid" ;
+VAL_ 1379 FICMAirClnrUserCustAutoWR 0 "off" 1 "on" ;
+VAL_ 1379 FICMAirClnrUserCustAutoWRValidit 0 "Valid" 1 "Invalid" ;
+VAL_ 1379 FICMAirClnrOnOffSwReq 0 "No request;" 1 "short press;" 2 "long press;" 3 "reserved;" ;
+VAL_ 1379 FICMAirClnrFltrCLRSR 0 "No request;" 1 "short press;" 2 "long press;" 3 "reserved;" ;
+VAL_ 1379 FICMACFrtBlwrLvlupReq 3 "reserved" 2 "long press" 1 "short press" 0 "No request" ;
+VAL_ 1379 FICMACFrtBlwrLvldownReq 3 "reserved" 2 "long press" 1 "short press" 0 "No request" ;
+VAL_ 1379 FICMAirClnrBlwrSpdDSR 0 "No request;" 1 "short press;" 2 "long press;" 3 "reserved;" ;
+VAL_ 1379 FICMAirClnrBlwrSpdISR 0 "No request;" 1 "short press;" 2 "long press;" 3 "reserved;" ;
+VAL_ 1379 FICMAirClnrAutoSwReq 0 "No request;" 1 "short press;" 2 "long press;" 3 "reserved;" ;
+VAL_ 1379 FICMRLSeatHeatSwReq 0 "OFF" 1 "LOW" 2 "MID" 3 "HIGH" ;
+VAL_ 1379 FICMRRSeatHeatSwReq 0 "OFF" 1 "LOW" 2 "MID" 3 "HIGH" ;
+VAL_ 1379 FICMFLSeatVentSwReq 0 "No request" 1 "short press" 2 "long press" 3 "reserved" ;
+VAL_ 1379 FICMFRSeatVentSwReq 0 "No request" 1 "short press" 2 "long press" 3 "reserved" ;
+VAL_ 1379 FICMRLSeatVentSwReq 0 "No request" 1 "short press" 2 "long press" 3 "reserved" ;
+VAL_ 1379 FICMRRSeatVentSwReq 0 "No request" 1 "short press" 2 "long press" 3 "reserved" ;
+VAL_ 1375 FrontCompStatFdbck 0 "Normal Operation" 1 "Degraded Operation" 2 "Inoperative" 3 "Invalid" ;
+VAL_ 1375 FrontACCompModReq 0 "Disengage Immediately" 1 "Disengage" 2 "Engage" 3 "No Action" ;
+VAL_ 1375 FrontPTCStatFdbck 0 "Normal Operation" 1 "Degraded Operation" 2 "Inoperative" 3 "Invalid" ;
+VAL_ 1375 FrontPTCReq 0 "Disengage Immediately" 1 "Disengage" 2 "Engage" 3 "No Action" ;
+VAL_ 1375 FrontCompSpeed 255 "invalid" ;
+VAL_ 501 TrShftLvrPos 11 "Forward Range H" 10 "Forward Range G" 15 "Lever Position Unknown" 9 "Forward Range F" 8 "Forward Range E" 7 "Forward Range D" 6 "Forward Range C" 5 "Forward Range B" 4 "Forward Range A" 3 "Neutral Range" 2 "Reverse Range" 1 "Park Range" 0 "Between Ranges" ;
+VAL_ 501 TrShftLvrPosV 1 "Invalid" 0 "Valid" ;
+VAL_ 572 VehicleSpeedStatus 1 "Invalid" 0 "Valid" ;
+VAL_ 1430 WaterPumpCommandOn 0 "not work" 1 "work" ;
+VAL_ 1430 BatCoolReq 0 "No Req" 1 "Req" ;
+VAL_ 1430 BatComprGearReq 0 "off" 1 "level 1" 2 "level 2" 3 "level 3" 4 "level 4" 5 "level 5" 6 "level 6" 7 "level 7" ;
+VAL_ 1432 ChrgPlugStatus 0 "Charge plug don't connect" 1 "Charge plug connect" ;
+

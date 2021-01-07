@@ -1,0 +1,293 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: HVAC
+
+
+BO_ 609 GW_EMS_261h: 8 Vector__XXX
+ SG_ AbmientTemperatureValidity : 47|1@1+ (1,0) [0|1] ""  HVAC
+ SG_ AbmientTemperature : 8|16@1+ (0.1,-40) [-40|215] "deg"  HVAC
+
+BO_ 547 GW_EMS_223h: 8 Vector__XXX
+ SG_ EngineCoolantTemperature : 8|8@1+ (1,-40) [-40|215] "deg"  HVAC
+
+BO_ 1296 HVAC_510h: 8 HVAC
+ SG_ HVACAutoIndicationStatus : 40|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ HVACRearDefrostStatusValidity : 39|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ HVACSetTemperature : 8|8@1+ (1,-40) [-40|214] "deg" Vector__XXX
+ SG_ HVACEnvirmentTemperature : 16|8@1+ (0.5,-30) [-30|97] "deg" Vector__XXX
+ SG_ HVACFrontDefrostStatus : 36|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ HVACStatusValidity : 35|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ HVACAirVolume : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ HVACRearDefrostStatus : 38|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ HVACAirClearingIndicationStatusV : 43|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ EvaporatorTemperature : 24|8@1+ (1,-40) [-40|214] "deg" Vector__XXX
+ SG_ HVACStatus : 34|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ HVACAutoIndicationStatusValidity : 41|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ HVACCycleMode : 32|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ HVACMode : 4|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ HVACFrontDefrostStatusValidity : 37|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ HVACAirClearingIndicationStatus : 42|1@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 501 GW_TCU_1F5h: 8 Vector__XXX
+ SG_ TransShiftLeverPositionValidity : 28|1@1+ (1,0) [0|1] ""  HVAC
+ SG_ TransShiftLeverPosition : 12|4@1+ (1,0) [0|15] ""  HVAC
+
+BO_ 544 GW_EMS_220h: 8 Vector__XXX
+ SG_ EngineSpeed : 0|16@1+ (0.25,0) [0|16383.75] "rpm"  HVAC
+
+BO_ 617 GW_ABS_269h: 8 Vector__XXX
+ SG_ VehicleSpeed : 0|13@1+ (0.05625,0) [0|300] "km/h"  HVAC
+ SG_ ABSCheckSum : 56|8@1+ (1,0) [0|255] ""  HVAC
+ SG_ ABSMessageCounter : 52|4@1+ (1,0) [0|15] ""  HVAC
+ SG_ VehicleSpeedStatus : 13|1@1+ (1,0) [0|1] ""  HVAC
+
+BO_ 885 BCM_375: 8 Vector__XXX
+ SG_ SunLightIntensity : 16|16@1+ (1,0) [0|60000] "Lux"  HVAC
+ SG_ BackLightingLuminance : 32|8@1+ (0.392156862745098,0) [0|100] "%"  HVAC
+ SG_ BackLightingLuminanceValidity : 41|1@1+ (1,0) [0|1] ""  HVAC
+ SG_ SunLightIntensityValidity : 40|1@1+ (1,0) [0|1] ""  HVAC
+ SG_ BackLightingStatus : 42|1@1+ (1,0) [0|0] ""  HVAC
+
+BO_ 641 BCM_281h: 8 Vector__XXX
+ SG_ SystemPowerModeValidity : 2|1@1+ (1,0) [0|1] ""  HVAC
+ SG_ SystemPowerMode : 0|2@1+ (1,0) [0|3] ""  HVAC
+
+
+
+BA_DEF_  "BusType" STRING ;
+BA_DEF_  "DBName" STRING ;
+BA_DEF_ SG_  "GenSigSendType" ENUM  "0: Cyclic","1: OnWrite","2: OnWriteWithRepetition","3: OnChange","4: OnChangeWithRepetition","5: IfActive","6: IfActiveWithRepetition","7: NoSigSendType","8: Reserved","9: Reserved","10: Reserved","11: Reserved","12: Reserved";
+BA_DEF_ SG_  "GenSigCycleTime" INT 0 0;
+BA_DEF_ SG_  "GenSigCycleTimeActive" INT 0 0;
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 0;
+BA_DEF_ SG_  "GenSigStartValue" FLOAT 0 0;
+BA_DEF_ BO_  "DiagRequest" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagResponse" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagState" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Cyclic","IfActive","NoMsgSendType","not_used";
+BA_DEF_ BO_  "NmMessage" ENUM  "No","Yes";
+BA_DEF_ BU_  "CANoeDrift" INT 0 0;
+BA_DEF_ BU_  "CANoeJitterMax" INT 0 0;
+BA_DEF_ BU_  "CANoeJitterMin" INT 0 0;
+BA_DEF_ BU_  "CANoeStartDelay" INT 0 0;
+BA_DEF_ BU_  "ILUsed" ENUM  "No","Yes";
+BA_DEF_ BU_  "NmNode" ENUM  "No","Yes";
+BA_DEF_ BU_  "NmStationAddress" HEX 0 255;
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ SG_  "SystemSignalLongSymbol" STRING ;
+BA_DEF_REL_ BU_BO_REL_  "GenMsgCycleTimeFast" INT 0 0;
+BA_DEF_REL_ BU_BO_REL_  "GenMsgNrOfRepetition" INT 0 0;
+BA_DEF_REL_ BU_BO_REL_  "GenMsgDelayTime" INT 0 0;
+BA_DEF_REL_ BU_BO_REL_  "GenMsgStartDelayTime" INT 0 0;
+BA_DEF_REL_ BU_SG_REL_  "GenSigTimeoutTime" INT 0 0;
+BA_DEF_DEF_  "BusType" "";
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_REL_ "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_REL_ "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_REL_ "GenMsgDelayTime" 0;
+BA_DEF_DEF_REL_ "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "GenSigSendType" "";
+BA_DEF_DEF_  "GenSigCycleTime" 0;
+BA_DEF_DEF_  "GenSigCycleTimeActive" 0;
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "DiagRequest" "No";
+BA_DEF_DEF_  "DiagResponse" "No";
+BA_DEF_DEF_  "DiagState" "No";
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenMsgILSupport" "Yes";
+BA_DEF_DEF_  "GenMsgSendType" "NoMsgSendType";
+BA_DEF_DEF_  "NmMessage" "No";
+BA_DEF_DEF_REL_ "GenSigTimeoutTime" 0;
+BA_DEF_DEF_  "CANoeDrift" 0;
+BA_DEF_DEF_  "CANoeJitterMax" 0;
+BA_DEF_DEF_  "CANoeJitterMin" 0;
+BA_DEF_DEF_  "CANoeStartDelay" 0;
+BA_DEF_DEF_  "ILUsed" "Yes";
+BA_DEF_DEF_  "NmNode" "No";
+BA_DEF_DEF_  "NmStationAddress" 0;
+BA_DEF_DEF_  "NodeLayerModules" "oseknm01.dll, CANoeILNLVector.dll";
+BA_DEF_DEF_  "SystemSignalLongSymbol" "";
+BA_ "BusType" "CAN";
+BA_ "DBName" "HVAC";
+BA_ "GenMsgCycleTime" BO_ 609 20;
+BA_ "GenMsgSendType" BO_ 609 0;
+BA_ "GenMsgCycleTime" BO_ 547 100;
+BA_ "GenMsgSendType" BO_ 547 0;
+BA_ "GenMsgCycleTime" BO_ 1296 200;
+BA_ "GenMsgSendType" BO_ 1296 0;
+BA_ "GenMsgCycleTime" BO_ 501 25;
+BA_ "GenMsgSendType" BO_ 501 0;
+BA_ "GenMsgCycleTime" BO_ 544 10;
+BA_ "GenMsgSendType" BO_ 544 0;
+BA_ "GenMsgCycleTime" BO_ 617 20;
+BA_ "GenMsgSendType" BO_ 617 0;
+BA_ "GenMsgCycleTime" BO_ 885 200;
+BA_ "GenMsgSendType" BO_ 885 0;
+BA_ "GenMsgCycleTime" BO_ 641 20;
+BA_ "GenMsgSendType" BO_ 641 0;
+BA_ "GenSigSendType" SG_ 609 AbmientTemperatureValidity 0;
+BA_ "GenSigCycleTime" SG_ 609 AbmientTemperatureValidity 100;
+BA_ "GenSigCycleTimeActive" SG_ 609 AbmientTemperatureValidity 100;
+BA_ "GenSigSendType" SG_ 609 AbmientTemperature 0;
+BA_ "GenSigCycleTime" SG_ 609 AbmientTemperature 100;
+BA_ "GenSigCycleTimeActive" SG_ 609 AbmientTemperature 100;
+BA_ "GenSigSendType" SG_ 547 EngineCoolantTemperature 0;
+BA_ "GenSigCycleTime" SG_ 547 EngineCoolantTemperature 100;
+BA_ "GenSigCycleTimeActive" SG_ 547 EngineCoolantTemperature 100;
+BA_ "GenSigSendType" SG_ 1296 HVACAutoIndicationStatus 0;
+BA_ "GenSigCycleTime" SG_ 1296 HVACAutoIndicationStatus 100;
+BA_ "GenSigCycleTimeActive" SG_ 1296 HVACAutoIndicationStatus 100;
+BA_ "GenSigSendType" SG_ 1296 HVACRearDefrostStatusValidity 0;
+BA_ "GenSigCycleTime" SG_ 1296 HVACRearDefrostStatusValidity 100;
+BA_ "GenSigCycleTimeActive" SG_ 1296 HVACRearDefrostStatusValidity 100;
+BA_ "GenSigSendType" SG_ 1296 HVACSetTemperature 0;
+BA_ "GenSigCycleTime" SG_ 1296 HVACSetTemperature 100;
+BA_ "GenSigCycleTimeActive" SG_ 1296 HVACSetTemperature 100;
+BA_ "GenSigSendType" SG_ 1296 HVACEnvirmentTemperature 0;
+BA_ "GenSigCycleTime" SG_ 1296 HVACEnvirmentTemperature 100;
+BA_ "GenSigCycleTimeActive" SG_ 1296 HVACEnvirmentTemperature 100;
+BA_ "GenSigSendType" SG_ 1296 HVACFrontDefrostStatus 0;
+BA_ "GenSigCycleTime" SG_ 1296 HVACFrontDefrostStatus 100;
+BA_ "GenSigCycleTimeActive" SG_ 1296 HVACFrontDefrostStatus 100;
+BA_ "GenSigSendType" SG_ 1296 HVACStatusValidity 0;
+BA_ "GenSigCycleTime" SG_ 1296 HVACStatusValidity 100;
+BA_ "GenSigCycleTimeActive" SG_ 1296 HVACStatusValidity 100;
+BA_ "GenSigSendType" SG_ 1296 HVACAirVolume 0;
+BA_ "GenSigCycleTime" SG_ 1296 HVACAirVolume 100;
+BA_ "GenSigCycleTimeActive" SG_ 1296 HVACAirVolume 100;
+BA_ "GenSigSendType" SG_ 1296 HVACRearDefrostStatus 0;
+BA_ "GenSigCycleTime" SG_ 1296 HVACRearDefrostStatus 100;
+BA_ "GenSigCycleTimeActive" SG_ 1296 HVACRearDefrostStatus 100;
+BA_ "GenSigSendType" SG_ 1296 HVACAirClearingIndicationStatusV 0;
+BA_ "GenSigCycleTime" SG_ 1296 HVACAirClearingIndicationStatusV 100;
+BA_ "GenSigCycleTimeActive" SG_ 1296 HVACAirClearingIndicationStatusV 100;
+BA_ "SystemSignalLongSymbol" SG_ 1296 HVACAirClearingIndicationStatusV "HVACAirClearingIndicationStatusValidity";
+BA_ "GenSigSendType" SG_ 1296 EvaporatorTemperature 0;
+BA_ "GenSigCycleTime" SG_ 1296 EvaporatorTemperature 100;
+BA_ "GenSigCycleTimeActive" SG_ 1296 EvaporatorTemperature 100;
+BA_ "GenSigSendType" SG_ 1296 HVACStatus 0;
+BA_ "GenSigCycleTime" SG_ 1296 HVACStatus 100;
+BA_ "GenSigCycleTimeActive" SG_ 1296 HVACStatus 100;
+BA_ "GenSigSendType" SG_ 1296 HVACAutoIndicationStatusValidity 0;
+BA_ "GenSigCycleTime" SG_ 1296 HVACAutoIndicationStatusValidity 100;
+BA_ "GenSigCycleTimeActive" SG_ 1296 HVACAutoIndicationStatusValidity 100;
+BA_ "GenSigSendType" SG_ 1296 HVACCycleMode 0;
+BA_ "GenSigCycleTime" SG_ 1296 HVACCycleMode 100;
+BA_ "GenSigCycleTimeActive" SG_ 1296 HVACCycleMode 100;
+BA_ "GenSigSendType" SG_ 1296 HVACMode 0;
+BA_ "GenSigCycleTime" SG_ 1296 HVACMode 100;
+BA_ "GenSigCycleTimeActive" SG_ 1296 HVACMode 100;
+BA_ "GenSigSendType" SG_ 1296 HVACFrontDefrostStatusValidity 0;
+BA_ "GenSigCycleTime" SG_ 1296 HVACFrontDefrostStatusValidity 100;
+BA_ "GenSigCycleTimeActive" SG_ 1296 HVACFrontDefrostStatusValidity 100;
+BA_ "GenSigSendType" SG_ 1296 HVACAirClearingIndicationStatus 0;
+BA_ "GenSigCycleTime" SG_ 1296 HVACAirClearingIndicationStatus 100;
+BA_ "GenSigCycleTimeActive" SG_ 1296 HVACAirClearingIndicationStatus 100;
+BA_ "GenSigSendType" SG_ 501 TransShiftLeverPositionValidity 0;
+BA_ "GenSigCycleTime" SG_ 501 TransShiftLeverPositionValidity 100;
+BA_ "GenSigCycleTimeActive" SG_ 501 TransShiftLeverPositionValidity 100;
+BA_ "GenSigSendType" SG_ 501 TransShiftLeverPosition 0;
+BA_ "GenSigCycleTime" SG_ 501 TransShiftLeverPosition 100;
+BA_ "GenSigCycleTimeActive" SG_ 501 TransShiftLeverPosition 100;
+BA_ "GenSigSendType" SG_ 544 EngineSpeed 0;
+BA_ "GenSigCycleTime" SG_ 544 EngineSpeed 100;
+BA_ "GenSigCycleTimeActive" SG_ 544 EngineSpeed 100;
+BA_ "GenSigSendType" SG_ 617 VehicleSpeed 0;
+BA_ "GenSigCycleTime" SG_ 617 VehicleSpeed 20;
+BA_ "GenSigCycleTimeActive" SG_ 617 VehicleSpeed 100;
+BA_ "GenSigSendType" SG_ 617 ABSCheckSum 0;
+BA_ "GenSigCycleTime" SG_ 617 ABSCheckSum 20;
+BA_ "GenSigCycleTimeActive" SG_ 617 ABSCheckSum 100;
+BA_ "GenSigSendType" SG_ 617 ABSMessageCounter 0;
+BA_ "GenSigCycleTime" SG_ 617 ABSMessageCounter 20;
+BA_ "GenSigCycleTimeActive" SG_ 617 ABSMessageCounter 100;
+BA_ "GenSigSendType" SG_ 617 VehicleSpeedStatus 0;
+BA_ "GenSigCycleTime" SG_ 617 VehicleSpeedStatus 20;
+BA_ "GenSigCycleTimeActive" SG_ 617 VehicleSpeedStatus 100;
+BA_ "GenSigSendType" SG_ 885 SunLightIntensity 0;
+BA_ "GenSigCycleTime" SG_ 885 SunLightIntensity 100;
+BA_ "GenSigCycleTimeActive" SG_ 885 SunLightIntensity 100;
+BA_ "GenSigSendType" SG_ 885 BackLightingLuminance 0;
+BA_ "GenSigCycleTime" SG_ 885 BackLightingLuminance 100;
+BA_ "GenSigCycleTimeActive" SG_ 885 BackLightingLuminance 100;
+BA_ "GenSigSendType" SG_ 885 BackLightingLuminanceValidity 0;
+BA_ "GenSigCycleTime" SG_ 885 BackLightingLuminanceValidity 100;
+BA_ "GenSigCycleTimeActive" SG_ 885 BackLightingLuminanceValidity 100;
+BA_ "GenSigSendType" SG_ 885 SunLightIntensityValidity 0;
+BA_ "GenSigCycleTime" SG_ 885 SunLightIntensityValidity 100;
+BA_ "GenSigCycleTimeActive" SG_ 885 SunLightIntensityValidity 100;
+BA_ "GenSigSendType" SG_ 885 BackLightingStatus 0;
+BA_ "GenSigCycleTime" SG_ 885 BackLightingStatus 100;
+BA_ "GenSigCycleTimeActive" SG_ 885 BackLightingStatus 100;
+BA_ "GenSigSendType" SG_ 641 SystemPowerModeValidity 0;
+BA_ "GenSigCycleTime" SG_ 641 SystemPowerModeValidity 100;
+BA_ "GenSigCycleTimeActive" SG_ 641 SystemPowerModeValidity 100;
+BA_ "GenSigSendType" SG_ 641 SystemPowerMode 0;
+BA_ "GenSigCycleTime" SG_ 641 SystemPowerMode 100;
+BA_ "GenSigCycleTimeActive" SG_ 641 SystemPowerMode 100;
+BA_REL_ "GenMsgCycleTimeFast" BU_BO_REL_ HVAC 1296 100;
+BA_REL_ "GenMsgNrOfRepetition" BU_BO_REL_ HVAC 1296 1;
+BA_REL_ "GenMsgDelayTime" BU_BO_REL_ HVAC 1296 20;
+VAL_ 609 AbmientTemperatureValidity 1 "Invalid" 0 "Valid" ;
+VAL_ 1296 HVACAutoIndicationStatus 1 "On" 0 "Off" ;
+VAL_ 1296 HVACRearDefrostStatusValidity 1 "Invalid" 0 "Valid" ;
+VAL_ 1296 HVACSetTemperature 255 "Invalid" ;
+VAL_ 1296 HVACEnvirmentTemperature 255 "Invalid" ;
+VAL_ 1296 HVACFrontDefrostStatus 1 "On" 0 "Off" ;
+VAL_ 1296 HVACStatusValidity 1 "Invalid" 0 "Valid" ;
+VAL_ 1296 HVACAirVolume 15 "Invalid" 14 "Reserved" 13 "Reserved" 12 "Reserved" 11 "Reserved" 10 "Reserved" 9 "Reserved" 8 "8" 7 "7" 6 "6" 5 "5" 4 "4" 3 "3" 2 "2" 1 "1" 0 "0" ;
+VAL_ 1296 HVACRearDefrostStatus 1 "On" 0 "Off" ;
+VAL_ 1296 HVACAirClearingIndicationStatusV 1 "Invalid" 0 "Valid" ;
+VAL_ 1296 EvaporatorTemperature 255 "Invalid" ;
+VAL_ 1296 HVACStatus 1 "On" 0 "Off" ;
+VAL_ 1296 HVACAutoIndicationStatusValidity 1 "Invalid" 0 "Valid" ;
+VAL_ 1296 HVACCycleMode 3 "3£ºInvalid" 2 "2£ºExteriorCirculation" 1 "1:  InteriorCirculation" 0 "0£ºDefault" ;
+VAL_ 1296 HVACMode 15 "Invalid" 14 "0x6-0xE:Reserved" 13 "0x6-0xE:Reserved" 12 "0x6-0xE:Reserved" 11 "0x6-0xE:Reserved" 10 "0x6-0xE:Reserved" 9 "0x6-0xE:Reserved" 8 "0x6-0xE:Reserved" 7 "0x6-0xE:Reserved" 6 "0x6-0xE:Reserved" 5 "0x5£ºDefrost" 4 "0x4£ºFoot&Defrost" 3 "0x3£ºFoot" 2 "0x2£ºFace&Foot" 1 "0x1£ºFace" 0 "0x0£ºDefault" ;
+VAL_ 1296 HVACFrontDefrostStatusValidity 1 "Invalid" 0 "Valid" ;
+VAL_ 1296 HVACAirClearingIndicationStatus 1 "On" 0 "Off" ;
+VAL_ 501 TransShiftLeverPositionValidity 1 "Invalid" 0 "Valid" ;
+VAL_ 501 TransShiftLeverPosition 15 "Lever Position Unknown" 14 "Reserved and Unused" 13 "Reserved and Unused" 12 "Reserved and Unused" 11 "$B=Forward Range H" 10 "$A=Forward Range G" 9 "$9=Forward Range F" 8 "$8=Forward Range E" 7 "$7=Forward Range D" 6 "$6=Forward Range C" 5 "$5=Forward Range B" 4 "$4=Forward Range A" 3 "$3=Neutral Range" 2 "$2=Reverse Range" 1 "$1=Park Range" 0 "$0=Between Ranges" ;
+VAL_ 544 EngineSpeed 65535 "Invalid" ;
+VAL_ 617 VehicleSpeedStatus 1 "Invalid" 0 "Valid" ;
+VAL_ 885 BackLightingLuminanceValidity 1 "Invalid" 0 "Valid" ;
+VAL_ 885 SunLightIntensityValidity 1 "Invalid" 0 "Valid" ;
+VAL_ 885 BackLightingStatus 1 "On" 0 "Off" ;
+VAL_ 641 SystemPowerModeValidity 1 "Invalid" 0 "Valid" ;
+VAL_ 641 SystemPowerMode 3 "$3=Crank Request" 2 "$2=Run" 1 "$1=Accessory" 0 "$0=Off" ;
+

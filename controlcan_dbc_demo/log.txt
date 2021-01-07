@@ -1,0 +1,47 @@
+dbc.cc:940[3] 有符号的signal 缺乏实际设备验证
+
+dbc.cc:940[3] 有符号的signal 缺乏实际设备验证
+
+dbc.cc:940[3] 有符号的signal 缺乏实际设备验证
+
+dbc.cc:942[3] 有符号的signal 缺乏实际设备验证
+
+dbc.cc:942[3] 有符号的signal 缺乏实际设备验证
+
+dbc.cc:943[3] 有符号的signal 缺乏实际设备验证
+
+dbc.cc:943[3] 有符号的signal 缺乏实际设备验证
+
+dbc_coder.cc:422[2] DBCCoder::Decode:422 msg
+dbc.cc:943[3] 有符号的signal 缺乏实际设备验证
+
+dbc.cc:943[3] 有符号的signal 缺乏实际设备验证
+
+dbc.cc:943[3] 有符号的signal 缺乏实际设备验证
+
+dbc.cc:943[3] 有符号的signal 缺乏实际设备验证
+
+dbc.cc:943[3] 有符号的signal 缺乏实际设备验证
+
+dbc.cc:942[3] 有符号的signal 缺乏实际设备验证
+
+dbc.cc:895[3] 期待 sg_ 实际却不是  line=42
+dbc.cc:897[1] 尝试自我修复dbc.cc:895[3] 期待 sg_ 实际却不是  line=47
+dbc.cc:897[1] 尝试自我修复dbc.cc:650[3] (62)NULL!=msg
+dbc.cc:942[3] 有符号的signal 缺乏实际设备验证
+
+dbc.cc:895[3] 期待 sg_ 实际却不是  line=42
+dbc.cc:897[1] 尝试自我修复dbc.cc:895[3] 期待 sg_ 实际却不是  line=47
+dbc.cc:897[1] 尝试自我修复dbc.cc:650[3] (62)NULL!=msg
+dbc.cc:945[3] 有符号的signal 缺乏实际设备验证
+
+dbc.cc:945[3] 有符号的signal 缺乏实际设备验证
+
+dbc.cc:945[3] 有符号的signal 缺乏实际设备验证
+
+dbc.cc:945[3] 有符号的signal 缺乏实际设备验证
+
+dbc.cc:945[3] 有符号的signal 缺乏实际设备验证
+
+dbc.cc:945[3] 有符号的signal 缺乏实际设备验证
+
