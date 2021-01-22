@@ -360,7 +360,7 @@ void Cdbc_demoDlg::ReadAllMessage()
 	if (DBC_GetFirstMessage(m_hDBC, &msg))
 	{
 		AddMsgToList(msg, &m_msgList);
-		MsgNum = 0;
+		MsgNum = 1;
 		while(DBC_GetNextMessage(m_hDBC, &msg))
 		{
 			AddMsgToList(msg, &m_msgList);
