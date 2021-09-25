@@ -1,32 +1,41 @@
-﻿生成启动时间为 2021/1/21 10:42:20。
-     1>项目“E:\DeskTopA\20200622\DBCDEMO\DBC_SDK_x86\controlcan_dbc_demo\controlcan_dbc_demo\dbc_demo.vcxproj”在节点 2 上(build 个目标)。
+﻿生成启动时间为 2021/8/11 10:39:28。
+     1>项目“D:\Backup\Documents\GitHub\CANConfig\controlcan_dbc_demo\dbc_demo.vcxproj”在节点 2 上(build 个目标)。
      1>InitializeBuildStatus:
          正在创建“Debug\dbc_demo.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
        ClCompile:
-         所有输出均为最新。
-         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I../include/ /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\dbc_demo.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt dbc_demoDlg.cpp
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I../include/ /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\dbc_demo.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I../include/ /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\dbc_demo.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt DBCDlg_CreatFile.cpp dbc_demo.cpp dbc_demoDlg.cpp StdioFileEx.cpp utility.cpp ListCtrlEx.cpp
+         ListCtrlEx.cpp
+         utility.cpp
+         StdioFileEx.cpp
          dbc_demoDlg.cpp
-     1>e:\desktopa\20200622\dbcdemo\dbc_sdk_x86\controlcan_dbc_demo\controlcan_dbc_demo\dbc_demodlg.cpp(381): warning C4018: “<”: 有符号/无符号不匹配
-     1>e:\desktopa\20200622\dbcdemo\dbc_sdk_x86\controlcan_dbc_demo\controlcan_dbc_demo\dbc_demodlg.cpp(497): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>d:\backup\documents\github\canconfig\controlcan_dbc_demo\dbc_demodlg.cpp(381): warning C4018: “<”: 有符号/无符号不匹配
+     1>d:\backup\documents\github\canconfig\controlcan_dbc_demo\dbc_demodlg.cpp(497): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  d:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : 参见“strcpy”的声明
-     1>e:\desktopa\20200622\dbcdemo\dbc_sdk_x86\controlcan_dbc_demo\controlcan_dbc_demo\dbc_demodlg.cpp(498): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>d:\backup\documents\github\canconfig\controlcan_dbc_demo\dbc_demodlg.cpp(498): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  d:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : 参见“strcpy”的声明
-     1>e:\desktopa\20200622\dbcdemo\dbc_sdk_x86\controlcan_dbc_demo\controlcan_dbc_demo\dbc_demodlg.cpp(501): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>d:\backup\documents\github\canconfig\controlcan_dbc_demo\dbc_demodlg.cpp(501): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  d:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : 参见“strcat”的声明
-     1>e:\desktopa\20200622\dbcdemo\dbc_sdk_x86\controlcan_dbc_demo\controlcan_dbc_demo\dbc_demodlg.cpp(511): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>d:\backup\documents\github\canconfig\controlcan_dbc_demo\dbc_demodlg.cpp(511): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  d:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : 参见“strcat”的声明
-     1>e:\desktopa\20200622\dbcdemo\dbc_sdk_x86\controlcan_dbc_demo\controlcan_dbc_demo\dbc_demodlg.cpp(522): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>d:\backup\documents\github\canconfig\controlcan_dbc_demo\dbc_demodlg.cpp(522): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  d:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : 参见“strcpy”的声明
-     1>e:\desktopa\20200622\dbcdemo\dbc_sdk_x86\controlcan_dbc_demo\controlcan_dbc_demo\dbc_demodlg.cpp(523): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>d:\backup\documents\github\canconfig\controlcan_dbc_demo\dbc_demodlg.cpp(523): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  d:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : 参见“strcpy”的声明
-     1>e:\desktopa\20200622\dbcdemo\dbc_sdk_x86\controlcan_dbc_demo\controlcan_dbc_demo\dbc_demodlg.cpp(451): warning C4101: “end”: 未引用的局部变量
-     1>e:\desktopa\20200622\dbcdemo\dbc_sdk_x86\controlcan_dbc_demo\controlcan_dbc_demo\dbc_demodlg.cpp(451): warning C4101: “start”: 未引用的局部变量
+     1>d:\backup\documents\github\canconfig\controlcan_dbc_demo\dbc_demodlg.cpp(451): warning C4101: “end”: 未引用的局部变量
+     1>d:\backup\documents\github\canconfig\controlcan_dbc_demo\dbc_demodlg.cpp(451): warning C4101: “start”: 未引用的局部变量
+         dbc_demo.cpp
+         DBCDlg_CreatFile.cpp
+     1>d:\backup\documents\github\canconfig\controlcan_dbc_demo\dbcdlg_creatfile.cpp(29): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : 参见“strcpy”的声明
+         正在生成代码...
        ResourceCompile:
-         所有输出均为最新。
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /l"0x0804" /IDebug\ /nologo /fo"Debug\dbc_demo.res" dbc_demo.rc 
        ManifestResourceCompile:
-         所有输出均为最新。
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\dbc_demo.exe.embed.manifest.res" Debug\dbc_demo_manifest.rc 
        Link:
-         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\DeskTopA\20200622\DBCDEMO\DBC_SDK_x86\controlcan_dbc_demo\controlcan_dbc_demo\Debug\dbc_demo.exe" /INCREMENTAL /NOLOGO /LIBPATH:../Lib/ LibDBCManager.lib ControlCAN.lib /MANIFEST /ManifestFile:"Debug\dbc_demo.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\DeskTopA\20200622\DBCDEMO\DBC_SDK_x86\controlcan_dbc_demo\controlcan_dbc_demo\Debug\dbc_demo.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\DeskTopA\20200622\DBCDEMO\DBC_SDK_x86\controlcan_dbc_demo\controlcan_dbc_demo\Debug\dbc_demo.lib" /MACHINE:X86 Debug\dbc_demo.res
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Backup\Documents\GitHub\CANConfig\controlcan_dbc_demo\Debug\dbc_demo.exe" /INCREMENTAL /NOLOGO /LIBPATH:../Lib/ LibDBCManager.lib ControlCAN.lib /MANIFEST /ManifestFile:"Debug\dbc_demo.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\Backup\Documents\GitHub\CANConfig\controlcan_dbc_demo\Debug\dbc_demo.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Backup\Documents\GitHub\CANConfig\controlcan_dbc_demo\Debug\dbc_demo.lib" /MACHINE:X86 Debug\dbc_demo.res
          Debug\dbc_demo.exe.embed.manifest.res
          Debug\DBCDlg_CreatFile.obj
          Debug\dbc_demo.obj
@@ -35,17 +44,18 @@
          Debug\StdioFileEx.obj
          Debug\utility.obj
          Debug\ListCtrlEx.obj
+         LINK : 没有找到 D:\Backup\Documents\GitHub\CANConfig\controlcan_dbc_demo\Debug\dbc_demo.exe 或上一个增量链接没有生成它；正在执行完全链接
        Manifest:
          C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\dbc_demo.exe.embed.manifest" /manifest Debug\dbc_demo.exe.intermediate.manifest "D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\Include\Manifest\dpiaware.manifest"
          所有输出均为最新。
        LinkEmbedManifest:
          所有输出均为最新。
-         dbc_demo.vcxproj -> E:\DeskTopA\20200622\DBCDEMO\DBC_SDK_x86\controlcan_dbc_demo\controlcan_dbc_demo\Debug\dbc_demo.exe
+         dbc_demo.vcxproj -> D:\Backup\Documents\GitHub\CANConfig\controlcan_dbc_demo\Debug\dbc_demo.exe
        FinalizeBuildStatus:
          正在删除文件“Debug\dbc_demo.unsuccessfulbuild”。
          正在对“Debug\dbc_demo.lastbuildstate”执行 Touch 任务。
-     1>已完成生成项目“E:\DeskTopA\20200622\DBCDEMO\DBC_SDK_x86\controlcan_dbc_demo\controlcan_dbc_demo\dbc_demo.vcxproj”(build 个目标)的操作。
+     1>已完成生成项目“D:\Backup\Documents\GitHub\CANConfig\controlcan_dbc_demo\dbc_demo.vcxproj”(build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:01.54
+已用时间 00:00:11.88
