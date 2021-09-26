@@ -579,8 +579,8 @@ void Cdbc_demoDlg::CreatFile_1()
 		str.Format(L"#define     RECEIVE_ID%d_2        0x%x\n", IDMaskChanle+1, (ID_NM&0xffffff00) + 0xff);
 		ConfigFile.WriteString(str);
 		ConfigFile.WriteString(L"#define  RECEIVE_ID1      (RECEIVE_ID1_1 & RECEIVE_ID1_2)\n");
-		ConfigFile.WriteString(L"#define  RECEIVE_ID1_MASK_OR  (RECEIVE_ID1_1 | RECEIVE_ID1_2)\n");
-
+		ConfigFile.WriteString(L"#define  RECEIVE_ID1_OR  (RECEIVE_ID1_1 | RECEIVE_ID1_2)\n");
+		ConfigFile.WriteString(L"#define  RECEIVE_ID1_MASK  (RECEIVE_ID1 ^ RECEIVE_ID1_OR)\n");
 		IDMaskChanle++;
 	}
 
