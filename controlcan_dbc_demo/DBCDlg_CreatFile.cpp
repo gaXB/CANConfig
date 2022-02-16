@@ -485,7 +485,7 @@ void Cdbc_demoDlg::CreatFile_1()
 	}
 
 	myFile.WriteString(L"};\n#define   CANMSG_RXATTR    (sizeof(CANMsgRX_AttrTable)/sizeof(CANMsgRXAttrStruct))\n\n#endif\n");
-
+	myFile.Close();
 	//дCANIDConfig.h
 	for (int i = 0; i< MsgNum; i++)
 	{
@@ -847,4 +847,6 @@ void Cdbc_demoDlg::CreatFile_1()
 		ConfigFile.WriteString(str);
 	}
 	ConfigFile.WriteString(L"};\n\n#endif /* CANIDCONFIG_H_ */\n");
+	ConfigFile.Close();
+
 }
