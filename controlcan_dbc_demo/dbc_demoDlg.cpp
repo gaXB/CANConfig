@@ -463,7 +463,7 @@ void Cdbc_demoDlg::SloveMsg( const DBCMessage& msg, int mID)
 	str = m_msgList.GetItemText(mID,2);
 	oneWriteByte.mType = GetType(str);
 
-	for (uint32 i =0; i < msg.nSignalCount; ++i)
+	for (uint32 i =0; i < msg.nSignalCount && i < 64; ++i)
 	{
 		sign_suffix[1] = '1';
 		bextern_byte = false;

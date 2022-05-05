@@ -1,8 +1,6 @@
-﻿生成启动时间为 2022/2/16 14:28:07。
+﻿生成启动时间为 2022/4/13 15:54:09。
      1>项目“D:\Backup\Documents\GitHub\CANConfig\controlcan_dbc_demo\dbc_demo.vcxproj”在节点 2 上(rebuild 个目标)。
-     1>_PrepareForClean:
-         正在删除文件“Release\dbc_demo.lastbuildstate”。
-       InitializeBuildStatus:
+     1>InitializeBuildStatus:
          正在创建“Release\dbc_demo.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
        ClCompile:
          D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I../include/ /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D _WINDOWS /D NDEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Release\dbc_demo.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
@@ -47,9 +45,11 @@
          dbc_demo.vcxproj -> D:\Backup\Documents\GitHub\CANConfig\controlcan_dbc_demo\Release\dbc_demo.exe
        Manifest:
          C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\Backup\Documents\GitHub\CANConfig\controlcan_dbc_demo\Release\dbc_demo.exe;#1" /manifest Release\dbc_demo.exe.intermediate.manifest "D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\Include\Manifest\dpiaware.manifest"
-     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppCommon.targets(562,5): error MSB6006: “mt.exe”已退出，代码为 31。
-     1>已完成生成项目“D:\Backup\Documents\GitHub\CANConfig\controlcan_dbc_demo\dbc_demo.vcxproj”(rebuild 个目标)的操作 - 失败。
+       FinalizeBuildStatus:
+         正在删除文件“Release\dbc_demo.unsuccessfulbuild”。
+         正在对“Release\dbc_demo.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“D:\Backup\Documents\GitHub\CANConfig\controlcan_dbc_demo\dbc_demo.vcxproj”(rebuild 个目标)的操作。
 
-生成失败。
+生成成功。
 
-已用时间 00:00:06.94
+已用时间 00:00:08.10

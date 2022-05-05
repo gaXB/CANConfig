@@ -49,7 +49,7 @@ typedef struct
 {
 	int signalNum;
 	int MsgID;
-	ONESIGNAL signal[50];
+	ONESIGNAL signal[64];
 	MSG_TYPE mType;
 }ONEBYTE;
 
