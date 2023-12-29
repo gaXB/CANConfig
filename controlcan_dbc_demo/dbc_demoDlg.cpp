@@ -450,7 +450,7 @@ void Cdbc_demoDlg::SloveMsg( const DBCMessage& msg, int mID)
 	uint32 nByte = 0;
 	int start, end;
 
-	int length, sign_length, start_length;
+	int length, sign_length, start_length, strlength;
 	char sign_suffix[4]="";
 	char commment_suffix[5]="";
 	bool bextern_byte;
@@ -508,7 +508,14 @@ void Cdbc_demoDlg::SloveMsg( const DBCMessage& msg, int mID)
 					{
 						commment_suffix[2] = '0'+ sign_length;
 					}
-					strcat(oneWriteByte.signal[oneWriteByte.signalNum].strComment, commment_suffix);   
+					strlength = strlen(oneWriteByte.signal[oneWriteByte.signalNum].strComment);
+					if (strlength > (_DBC_COMMENT_MAX_LENGTH_ -5))
+					{
+					}
+					else
+					{
+						strcat(oneWriteByte.signal[oneWriteByte.signalNum].strComment, commment_suffix);   
+					}
 				}
 				oneWriteByte.signalNum++;
 				sign_suffix[1]++;

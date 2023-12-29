@@ -18,7 +18,7 @@ char* Str_DeletEnter(char* c_data)
 	char data[_DBC_COMMENT_MAX_LENGTH_] = "";
 
 	int j =0 ;
-	for (int i= 0; i<_DBC_COMMENT_MAX_LENGTH_ && c_data[i] != '\0'; i++)
+	for (int i= 0; i<(_DBC_COMMENT_MAX_LENGTH_ -1)&& c_data[i] != '\0'; i++)
 	{
 		if (c_data[i] != '\r' && c_data[i] != '\n')
 		{
